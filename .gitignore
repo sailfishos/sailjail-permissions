@@ -1,0 +1,7 @@
+Makefile
+/translations/strings.cpp
+/translations/*.qm
+/translations/*.ts
+*.list
+/RPMS/
+/installroot/
