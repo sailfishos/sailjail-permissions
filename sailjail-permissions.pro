@@ -6,6 +6,7 @@ DISTFILES = \
     permissions/*.permission \
     permissions/*.profile \
     rpm/sailjail-permissions.spec \
+    tools/generate_translation_strings.py \
     README.md \
     COPYING
 

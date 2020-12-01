@@ -7,6 +7,8 @@ URL:      https://github.com/sailfishos/sailjail-permissions
 Source0:  %{name}-%{version}.tar.bz2
 
 BuildRequires: qt5-qmake
+BuildRequires: qt5-qttools-linguist
+BuildRequires: python3-base
 
 %define permissions_dir %{_sysconfdir}/sailjail/permissions
 
@@ -28,3 +30,13 @@ make %{?_smp_mflags}
 %license COPYING
 %dir %attr(755,root,root) %{permissions_dir}
 %{permissions_dir}/*
+%{_datadir}/translations/*.qm
+
+%package ts-devel
+Summary: Translation source for %{name}
+
+%description ts-devel
+%{summary}.
+
+%files ts-devel
+%{_datadir}/translations/source/*.ts
