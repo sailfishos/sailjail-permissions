@@ -21,4 +21,5 @@ dbus-user.broadcast com.jolla.lipstick.ConnectionSelector=com.jolla.lipstick.Con
 dbus-system.talk org.ofono
 dbus-system.broadcast org.ofono=org.ofono.*@/*
 
+# Connman
 include /etc/sailjail/permissions/Connman.permission
