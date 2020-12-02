@@ -12,4 +12,14 @@ protocol inet,inet6,netlink
 #net eth0
 #netfilter
 
+# ConnectionSelector
+dbus-user.talk com.jolla.lipstick.ConnectionSelector
+dbus-user.broadcast com.jolla.lipstick.ConnectionSelector=com.jolla.lipstick.ConnectionSelectorIf.*@/*
+
+# Ofono
+# Needed by Qt network manager bearer plugin to check modem statuses
+dbus-system.talk org.ofono
+dbus-system.broadcast org.ofono=org.ofono.*@/*
+
+# Connman
 include /etc/sailjail/permissions/Connman.permission
