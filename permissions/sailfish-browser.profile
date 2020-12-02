@@ -26,7 +26,6 @@
 # x-sailjail-permission = SyncFW
 
 ### APPLICATION
-private-bin sailfish-browser
 dbus-user.own org.sailfishos.browser
 dbus-user.own org.sailfishos.browser.ui
 

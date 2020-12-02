@@ -21,5 +21,4 @@
 # x-sailjail-permission = Privileged
 
 ### APPLICATION
-private-bin jolla-contacts
 dbus-user.own com.jolla.contacts.ui

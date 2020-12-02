@@ -21,5 +21,4 @@
 # x-sailjail-permission = AppLaunch
 
 ### APPLICATION
-private-bin jolla-email
 dbus-user.own com.jolla.email.ui
