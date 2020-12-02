@@ -9,6 +9,7 @@
 whitelist /usr/share/jolla-settings/pages/accounts
 whitelist /usr/share/xml/accounts
 whitelist /usr/share/accounts
+whitelist /usr/share/libsailfishkeyprovider/storedkeys.ini
 
 mkdir     ${HOME}/.local/share/system/privileged/Accounts
 whitelist ${HOME}/.local/share/system/privileged/Accounts
