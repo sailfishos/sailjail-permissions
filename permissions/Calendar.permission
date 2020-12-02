@@ -10,3 +10,6 @@ whitelist /usr/share/jolla-calendar
 
 mkdir     ${HOME}/.local/share/system/privileged/Calendar
 whitelist ${HOME}/.local/share/system/privileged/Calendar
+
+mkdir     ${HOME}/.local/share/system/privileged/autofill
+whitelist ${HOME}/.local/share/system/privileged/autofill

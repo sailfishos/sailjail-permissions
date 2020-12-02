@@ -18,5 +18,3 @@
 ### APPLICATION
 private-bin jolla-calendar
 dbus-user.own com.jolla.calendar.ui
-mkdir     ${HOME}/.local/share/system/privileged/autofill
-whitelist ${HOME}/.local/share/system/privileged/autofill
