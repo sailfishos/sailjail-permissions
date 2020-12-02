@@ -12,6 +12,12 @@ protocol inet,inet6,netlink
 #net eth0
 #netfilter
 
+# Crypto config for SSL
+private-etc ssl,hosts,pki,crypto-policies
+
+# ca-certificates
+whitelist /usr/share/pki
+
 # ConnectionSelector
 dbus-user.talk com.jolla.lipstick.ConnectionSelector
 dbus-user.broadcast com.jolla.lipstick.ConnectionSelector=com.jolla.lipstick.ConnectionSelectorIf.*@/*

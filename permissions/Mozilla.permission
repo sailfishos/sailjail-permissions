@@ -6,11 +6,6 @@
 # x-sailjail-translation-key-long-description = permission-la-webview_description
 # x-sailjail-long-description = Viewing web content
 
-private-etc ssl,hosts,pki,crypto-policies
-
-# ca-certificates
-whitelist /usr/share/pki
-
 # http proxy config?
 # BEG systembus-org.pacrunner.resource
 dbus-system.talk org.pacrunner
