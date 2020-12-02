@@ -1,0 +1,10 @@
+# -*- mode: sh -*-
+
+# x-sailjail-translation-catalog = sailjail-permissions
+# x-sailjail-translation-key-description = permission-la-captive_portal
+# x-sailjail-description = Captive portal login
+# x-sailjail-translation-key-long-description = permission-la-captive_portal_description
+# x-sailjail-long-description = Grant access to the network
+include /etc/sailjail/permissions/Mozilla.permission
+
+whitelist /usr/share/sailfish-browser/
