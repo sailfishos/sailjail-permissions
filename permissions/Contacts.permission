@@ -16,11 +16,11 @@ include /etc/sailjail/permissions/Phone.permission
 mkdir     ${HOME}/.local/share/system/Contacts
 whitelist ${HOME}/.local/share/system/Contacts
 
-mkdir     ${HOME}/.local/share/system/privileged/Contacts
-whitelist ${HOME}/.local/share/system/privileged/Contacts
+mkdir     ${PRIVILEGED}/Contacts
+privileged-data Contacts
 
-mkdir     ${HOME}/.local/share/system/privileged/autofill
-whitelist ${HOME}/.local/share/system/privileged/autofill
+mkdir     ${PRIVILEGED}/autofill
+privileged-data autofill
 
 mkdir     ${HOME}/.local/share/data/avatars
 whitelist ${HOME}/.local/share/data/avatars
