@@ -9,7 +9,12 @@
 # BEG systembus-org.ofono.resource
 dbus-system.talk org.ofono
 dbus-system.broadcast org.ofono=org.ofono.*@/*
+dbus-system.broadcast org.ofono=org.nemomobile.ofono.*@/*
 # END systembus-org.ofono.resource
+
+# Voicecall service
+dbus-user.talk org.nemomobile.voicecall
+dbus-user.broadcast org.nemomobile.voicecall=org.nemomobile.voicecall.*@/*
 
 # BEG sessionbus-org.freedesktop.Telepathy.resource
 dbus-user.talk org.freedesktop.Telepathy
