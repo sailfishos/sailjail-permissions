@@ -10,6 +10,3 @@ mkdir     ${HOME}/Videos
 whitelist ${HOME}/Videos
 
 include /etc/sailjail/permissions/Thumbnails.permission
-
-# Allow creating thumbnails of videos
-private-bin thumbnaild-video

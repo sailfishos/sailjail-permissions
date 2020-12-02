@@ -16,5 +16,4 @@
 # x-sailjail-permission = SyncFW
 
 ### APPLICATION
-private-bin jolla-calendar
 dbus-user.own com.jolla.calendar.ui
