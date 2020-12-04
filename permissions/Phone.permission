@@ -34,3 +34,7 @@ dbus-user.broadcast org.nemomobile.CommHistory=org.nemomobile.CommHistory.*@/*
 # BEG systembus-org.ofono.SmartMessagingAgent.resource
 dbus-system.talk org.ofono.SmartMessagingAgent
 # END systembus-org.ofono.SmartMessagingAgent.resource
+
+# BEG sessionbus-com.jolla.voicecall.ui.resource
+dbus-user.talk com.jolla.voicecall.ui
+# END sessionbus-com.jolla.voicecall.ui.resource
