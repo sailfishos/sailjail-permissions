@@ -21,6 +21,10 @@ whitelist ${HOME}/.local/share/accounts
 dbus-user.talk com.google.code.AccountsSSO.SingleSignOn
 dbus-user.broadcast com.google.code.AccountsSSO.SingleSignOn=*@/*
 
+# libaccounts-glib/libaccounts-qt
+dbus-user.own com.google.code.AccountsSSO.Accounts.*
+dbus-user.broadcast com.google.code.AccountsSSO.Accounts.*=com.google.code.AccountsSSO.Accounts@/ServiceType/*
+
 # buteo profiles
 private-etc buteo
 whitelist ${HOME}/.cache/msyncd/sync
