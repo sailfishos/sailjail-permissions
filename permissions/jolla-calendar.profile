@@ -10,7 +10,6 @@
 
 ### PERMISSIONS
 # x-sailjail-permission = Accounts
-# x-sailjail-permission = Notifications
 # x-sailjail-permission = Calendar
 # x-sailjail-permission = Privileged
 # x-sailjail-permission = SyncFW

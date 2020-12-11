@@ -10,7 +10,6 @@
 
 ### PERMISSIONS
 # x-sailjail-permission = Contacts
-# x-sailjail-permission = Notifications
 # x-sailjail-permission = Phone
 
 ### APPLICATION

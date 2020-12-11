@@ -12,7 +12,6 @@
 # x-sailjail-permission = Bluetooth
 # x-sailjail-permission = Phone
 # x-sailjail-permission = Tracker
-# x-sailjail-permission = Notifications
 # x-sailjail-permission = Thumbnails
 # x-sailjail-permission = Pictures
 # x-sailjail-permission = Accounts
