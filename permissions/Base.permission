@@ -146,5 +146,8 @@ caps.drop all
 nonewprivs
 seccomp
 
+### notifications
+include /etc/sailjail/permissions/Notifications.permission
+
 ### udisks2
 include /etc/sailjail/permissions/UDisks.permission

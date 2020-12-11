@@ -17,7 +17,6 @@
 # x-sailjail-permission = Location
 # x-sailjail-permission = Downloads
 # x-sailjail-permission = Mozilla
-# x-sailjail-permission = Notifications
 # x-sailjail-permission = Privileged
 # x-sailjail-permission = Internet
 # x-sailjail-permission = Connman
