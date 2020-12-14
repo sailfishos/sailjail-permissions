@@ -17,3 +17,6 @@ whitelist ${HOME}/.local/share/system/privileged/Contacts
 
 mkdir     ${HOME}/.local/share/system/privileged/autofill
 whitelist ${HOME}/.local/share/system/privileged/autofill
+
+mkdir     ${HOME}/.local/share/data/avatars
+whitelist ${HOME}/.local/share/data/avatars
