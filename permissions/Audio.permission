@@ -22,3 +22,7 @@ dbus-user.own org.mpris.MediaPlayer2.*
 dbus-system.talk org.maemo.resource.manager
 dbus-system.broadcast org.maemo.resource.manager=org.maemo.resource.manager.*@/*
 # END systembus-org.maemo.resource.manager.resource
+
+# BEG systembus-org.nemomobile.Route.Manager
+dbus-system.talk org.nemomobile.Route.Manager
+# END systembus-org.nemomobile.Route.Manager
