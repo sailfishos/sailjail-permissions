@@ -9,6 +9,10 @@
 whitelist /usr/share/jolla-settings/pages/jolla-contacts
 whitelist /usr/share/jolla-contacts
 
+# Due to contact card needing access for calling, pulling it in here.
+# One case triggering this is the temporary contact card.
+include /etc/sailjail/permissions/Phone.permission
+
 mkdir     ${HOME}/.local/share/system/Contacts
 whitelist ${HOME}/.local/share/system/Contacts
 
