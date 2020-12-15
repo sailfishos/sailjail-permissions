@@ -151,3 +151,11 @@ include /etc/sailjail/permissions/Notifications.permission
 
 ### udisks2
 include /etc/sailjail/permissions/UDisks.permission
+
+### privileged data
+# make sure privileged data directory exists
+mkdir ${PRIVILEGED}
+# and is visible to application
+whitelist ${PRIVILEGED}
+# but by default all content is hidden
+privileged-data -

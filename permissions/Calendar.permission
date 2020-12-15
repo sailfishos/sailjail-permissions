@@ -8,8 +8,8 @@
 
 whitelist /usr/share/jolla-calendar
 
-mkdir     ${HOME}/.local/share/system/privileged/Calendar
-whitelist ${HOME}/.local/share/system/privileged/Calendar
+mkdir     ${PRIVILEGED}/Calendar
+privileged-data Calendar
 
-mkdir     ${HOME}/.local/share/system/privileged/autofill
-whitelist ${HOME}/.local/share/system/privileged/autofill
+mkdir     ${PRIVILEGED}/autofill
+privileged-data autofill
