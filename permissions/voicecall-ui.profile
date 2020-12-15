@@ -13,5 +13,3 @@ dbus-user.own com.jolla.voicecall.ui
 dbus-user.own com.nokia.telephony.callhistory
 # FIXME: A legacy directory that should be renamed
 whitelist /usr/share/voicecall-ui-jolla
-# To launch Messages for replies
-dbus-user.talk org.sailfishos.Messages
