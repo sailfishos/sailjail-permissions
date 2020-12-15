@@ -13,6 +13,9 @@ whitelist /usr/share/jolla-contacts
 # One case triggering this is the temporary contact card.
 include /etc/sailjail/permissions/Phone.permission
 
+# To launch Messages from contact card
+dbus-user.talk org.sailfishos.Messages
+
 mkdir     ${HOME}/.local/share/system/Contacts
 whitelist ${HOME}/.local/share/system/Contacts
 
