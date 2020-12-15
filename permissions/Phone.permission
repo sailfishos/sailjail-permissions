@@ -41,3 +41,7 @@ dbus-user.talk com.jolla.voicecall.ui
 
 # Have audio permissions implicitly.
 include /etc/sailjail/permissions/Audio.permission
+
+# Allow requesting sim pin
+dbus-user.talk com.jolla.PinQuery
+dbus-user.broadcast com.jolla.PinQuery=com.jolla.PinQuery.*@/*
