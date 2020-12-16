@@ -13,3 +13,6 @@ dbus-user.own com.jolla.voicecall.ui
 dbus-user.own com.nokia.telephony.callhistory
 # FIXME: A legacy directory that should be renamed
 whitelist /usr/share/voicecall-ui-jolla
+
+dbus-system.talk org.nemomobile.provisioning
+dbus-system.broadcast org.nemomobile.provisioning=org.nemomobile.provisioning.interface.*@/
