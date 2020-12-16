@@ -29,3 +29,7 @@ dbus-system.broadcast org.ofono=org.ofono.*@/*
 
 # Connman
 include /etc/sailjail/permissions/Connman.permission
+
+# Allow requesting sim pin
+dbus-user.talk com.jolla.PinQuery
+dbus-user.broadcast com.jolla.PinQuery=com.jolla.PinQuery.*@/*
