@@ -38,3 +38,6 @@ dbus-system.talk org.ofono.SmartMessagingAgent
 # BEG sessionbus-com.jolla.voicecall.ui.resource
 dbus-user.talk com.jolla.voicecall.ui
 # END sessionbus-com.jolla.voicecall.ui.resource
+
+# Have audio permissions implicitly.
+include /etc/sailjail/permissions/Audio.permission
