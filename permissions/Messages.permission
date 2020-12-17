@@ -21,6 +21,10 @@ dbus-user.broadcast org.freedesktop.Telepathy.*=org.freedesktop.Telepathy.*@/*
 mkdir     ${HOME}/.local/share/commhistory
 whitelist ${HOME}/.local/share/commhistory
 
+# Temporary directory for outgoing MMS.
+mkdir     ${HOME}/.cache/commhistory-tmp
+whitelist ${HOME}/.cache/commhistory-tmp
+
 # BEG sessionbus-org.nemomobile.CommHistory.resource
 dbus-user.talk org.nemomobile.CommHistory
 dbus-user.broadcast org.nemomobile.CommHistory=org.nemomobile.CommHistory.*@/*

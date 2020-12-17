@@ -20,6 +20,27 @@ include /etc/sailjail/permissions/Bluetooth.permission
 include /etc/sailjail/permissions/Accounts.permission
 include /etc/sailjail/permissions/Email.permission
 
+# Temporary directory for outgoing MMS.
+mkdir     ${HOME}/.cache/commhistory-tmp
+whitelist ${HOME}/.cache/commhistory-tmp
+
 # Allow requesting sim pin
 dbus-user.talk com.jolla.PinQuery
 dbus-user.broadcast com.jolla.PinQuery=com.jolla.PinQuery.*@/*
+
+# Roaming checking
+dbus-user.talk com.jolla.Connectiond
+dbus-user.broadcast com.jolla.Connectiond=com.jolla.Connectiond.*@/*
+
+# Sharing MMS
+dbus-system.talk org.nemomobile.MmsHandler
+dbus-system.broadcast org.nemomobile.MmsHandler=org.nemomobile.MmsHandler.*@/*
+
+# Contacts needed for both Email and MMS sharing
+include /etc/sailjail/permissions/Contacts.permission
+
+# Account manager and friends
+dbus-user.talk org.freedesktop.Telepathy
+dbus-user.broadcast org.freedesktop.Telepathy=org.freedesktop.Telepathy.*@/*
+dbus-user.talk org.freedesktop.Telepathy.*
+dbus-user.broadcast org.freedesktop.Telepathy.*=org.freedesktop.Telepathy.*@/*
