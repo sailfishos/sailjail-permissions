@@ -25,4 +25,5 @@ dbus-system.broadcast org.maemo.resource.manager=org.maemo.resource.manager.*@/*
 
 # BEG systembus-org.nemomobile.Route.Manager
 dbus-system.talk org.nemomobile.Route.Manager
+dbus-system.broadcast org.nemomobile.Route.Manager=org.nemomobile.Route.Manager.*@/*
 # END systembus-org.nemomobile.Route.Manager
