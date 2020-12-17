@@ -17,3 +17,7 @@ whitelist ${HOME}/.cache/org.nemomobile/thumbnails
 dbus-user.talk org.nemomobile.Thumbnailer
 dbus-user.broadcast org.nemomobile.Thumbnailer=org.nemomobile.Thumbnailer.*@/*
 # END sessionbus-org.nemomobile.Thumbnailer.resource
+
+# libnemothumbnailer-qt5 might execute helper binaries instead
+# of using dbus interface for handling pdf and video files
+private-bin thumbnaild-pdf,thumbnaild-video
