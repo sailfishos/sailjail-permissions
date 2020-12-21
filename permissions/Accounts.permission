@@ -26,5 +26,4 @@ dbus-user.own com.google.code.AccountsSSO.Accounts.*
 dbus-user.broadcast com.google.code.AccountsSSO.Accounts.*=com.google.code.AccountsSSO.Accounts@/ServiceType/*
 
 # buteo profiles
-private-etc buteo
-whitelist ${HOME}/.cache/msyncd/sync
+include /etc/sailjail/permissions/SyncFW.permission
