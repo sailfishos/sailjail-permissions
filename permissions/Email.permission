@@ -38,6 +38,9 @@ include /etc/sailjail/permissions/Videos.permission
 include /etc/sailjail/permissions/Music.permission
 include /etc/sailjail/permissions/Downloads.permission
 
+# Sync profiles and manual syncing of folders.
+include /etc/sailjail/permissions/SyncFW.permission
+
 # Media Indexing for above
 include /etc/sailjail/permissions/MediaIndexing.permission
 
