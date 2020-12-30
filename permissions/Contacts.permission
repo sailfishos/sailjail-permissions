@@ -16,6 +16,9 @@ include /etc/sailjail/permissions/Phone.permission
 # To launch Messages from contact card
 dbus-user.talk org.sailfishos.Messages
 
+# To launch contacts import wizard
+dbus-user.talk com.jolla.contacts.ui
+
 mkdir     ${HOME}/.local/share/system/Contacts
 whitelist ${HOME}/.local/share/system/Contacts
 
