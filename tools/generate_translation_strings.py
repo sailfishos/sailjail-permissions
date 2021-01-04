@@ -18,7 +18,7 @@ class Generator:
 
     def process_line(self, line):
         match = self.RE.match(line)
-        if match is not None and match.group('name') in self.KEYS:
+        if match is not None and match.group('name') in self.translations:
             name = match.group('name')
             if match.group('type') == 'translation-key-':
                 self.translations[name].key =  match.group('value')
