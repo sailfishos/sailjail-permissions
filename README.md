@@ -3,11 +3,14 @@
 Sailfish OS application sandboxing and permissions system is build on top of
 Firejail. The Firejail documentation can be found from [here](https://firejail.wordpress.com/).
 
-The Sailfish OS application permissions are applicable only for sandboxed applications. Target is to have application sandboxing enforce for all applications but currently we are not there yet. Note that permission system is only available for 1st and 2nd party application developers.
+The Sailfish OS application permissions are applicable only to sandboxed applications. Target is to
+have application sandboxing enforced to all applications but currently we are not there yet. Note
+that permission system is only available for 1st and 2nd party application developers.
 
 Application launch happens via standard desktop file that has been augmented
-so that it contains necessary meta-data (such as list of requested permissions)
-and [sailjail laucher](https://github.com/sailfishos/sailjail/) is used for executing the application binary.
+so that it contains necessary metadata (such as a list of requested permissions)
+and [Sailjail launcher](https://github.com/sailfishos/sailjail/) is used to execute the application
+binary.
 
 Permissions that an application can request are defined in this package, in terms of
 files containing standard Firejail directives and Sailfish OS specific metadata.
@@ -31,8 +34,8 @@ Let's go through needed changes via an example.
     OrganizationName=org.foobar
     ApplicationName=myapp
 
-For Exec line use **sailjail** to start the application, pass file name of the desktop file, and refer
-to the application binary with a full path.
+For Exec line use **sailjail** to start the application, pass the file name of the desktop file,
+and refer to the application binary with the full path.
 
 To declare permissions and data directories you need to add **X-Sailjail** section to the
 desktop file. Under the **X-Sailjail** section add
@@ -42,6 +45,10 @@ desktop file. Under the **X-Sailjail** section add
 | Permissions | Semi-colon separated list of requested permissions |
 | OrganizationName | Application development organization |
 | ApplicationName | Application data folder |
+
+Permissions are listed [later in the document](#Permissions). They grant access to certain data
+paths, D-Bus interfaces, socket types and application binaries. Currently applications must define
+all needed permissions in desktop file and all of them are granted at launch.
 
 OrganizationName and ApplicationName is used for granting for the application write access to
 
@@ -54,7 +61,8 @@ Access above directories from the application through QStandardPaths
 2. Application cache location - QStandardPaths::writableLocation(QStandardPaths::CacheLocation)
 3. Application config location  - QStandardPaths::writableLocation(QStandardPaths::CacheLocation)
 
-Only these directories can be used for storing data that needs to persist over application restarts.
+Only these directories can be used for storing application specific data that needs to persist over
+application restarts.
 
 ### Use correct application data directories
 
@@ -89,7 +97,7 @@ Permissions that applications may use (names are subject to change):
 | Email | Reading and sending emails. Access to email attachments. |
 | Internet | Using data connection and connecting to internet. |
 | Location | Use GPS and positioning. |
-| MediaIndexing | Access to Tracker to list files on device. If you have access to data directory, you may want to use also this. |
+| MediaIndexing | Access to Tracker to list files on device. If you have access to a data directory, you may want to use also this. |
 | Messages | Access to message data and to send SMS messages. |
 | Mozilla | If you use Gecko based WebView you need this. |
 | Music | Access to Music directory, playlists and coverart cache. |
