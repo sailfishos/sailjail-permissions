@@ -11,3 +11,6 @@ whitelist ${HOME}/.local/share/ambienced/wallpapers
 
 dbus-user.talk com.jolla.ambienced
 dbus-user.broadcast com.jolla.ambienced=com.jolla.ambienced.*@/*
+
+mkdir     ${PRIVILEGED}/Ambienced
+privileged-data Ambienced
