@@ -8,3 +8,5 @@
 
 mkdir     ${HOME}/Downloads
 whitelist ${HOME}/Downloads
+
+whitelist ${HOME}/android_storage/Download

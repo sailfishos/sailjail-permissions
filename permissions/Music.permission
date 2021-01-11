@@ -14,3 +14,6 @@ whitelist ${HOME}/Playlists
 
 mkdir     ${HOME}/.cache/media-art
 whitelist ${HOME}/.cache/media-art
+
+whitelist ${HOME}/android_storage/Music
+whitelist ${HOME}/android_storage/Podcasts
