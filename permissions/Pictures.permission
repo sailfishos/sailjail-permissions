@@ -9,4 +9,7 @@
 mkdir     ${HOME}/Pictures
 whitelist ${HOME}/Pictures
 
+whitelist ${HOME}/android_storage/Pictures
+whitelist ${HOME}/android_storage/DCIM
+
 include /etc/sailjail/permissions/Thumbnails.permission
