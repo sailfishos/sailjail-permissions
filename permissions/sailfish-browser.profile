@@ -36,3 +36,7 @@ whitelist ${HOME}/.local/share/org.sailfishos/sailfish-browser
 
 mkdir     ${HOME}/.mozilla/captiveportal
 whitelist ${HOME}/.mozilla/captiveportal
+
+# Saving bookmarks to launcher feature
+# Override read-only from whitelist-common.inc
+read-write ${HOME}/.local/share/applications
