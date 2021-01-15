@@ -13,3 +13,7 @@ privileged-data Calendar
 
 mkdir     ${PRIVILEGED}/autofill
 privileged-data autofill
+
+mkdir     ${HOME}/.config/nemo
+whitelist ${HOME}/.config/nemo
+whitelist ${HOME}/.config/nemo/nemo-qml-plugin-calendar.conf
