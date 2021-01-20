@@ -11,3 +11,7 @@
 dbus-system.talk org.maemo.resource.manager
 dbus-system.broadcast org.maemo.resource.manager=org.maemo.resource.manager.*@/*
 # END systembus-org.maemo.resource.manager
+
+# BEG sessionbus-org.sailfishos.zxing
+dbus-user.talk org.sailfishos.zxing
+# END sessionbus-org.sailfishos.zxing
