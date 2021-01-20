@@ -18,6 +18,7 @@
 # x-sailjail-permission = Internet
 # x-sailjail-permission = Connman
 # x-sailjail-permission = Calendar
+# x-sailjail-permission = GnuPG
 # for starting messageserver5
 # x-sailjail-permission = AppLaunch
 

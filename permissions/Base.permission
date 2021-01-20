@@ -18,6 +18,9 @@ writable-run-user
 # we use "private-etc selinux" -> must not blacklist it
 noblacklist /etc/selinux
 
+# we need to be able to whitelist it later, while it's in disable-common.inc
+noblacklist ${HOME}/.gnupg
+
 # Persistent local customizations
 # Persistent global definitions
 #include globals.local
