@@ -1,0 +1,14 @@
+# -*- mode: sh -*-
+
+# x-sailjail-translation-catalog =
+# x-sailjail-translation-key-description =
+# x-sailjail-description = GnuPG
+# x-sailjail-translation-key-long-description =
+# x-sailjail-long-description = Use cryptographic operations with GnuPG
+
+mkdir     ${HOME}/.gnupg
+whitelist ${HOME}/.gnupg
+
+private-bin gpg2
+private-bin gpg-agent
+private-bin pinentry
