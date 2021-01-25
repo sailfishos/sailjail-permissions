@@ -144,6 +144,10 @@ protocol unix
 ### environment
 shell none
 
+### device info
+private-etc hw-release
+whitelist /usr/share/ssu/board-mappings.d
+
 ### security filters
 caps.drop all
 nonewprivs

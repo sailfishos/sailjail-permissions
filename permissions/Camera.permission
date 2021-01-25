@@ -7,6 +7,8 @@
 # x-sailjail-long-description = Take photos and videos
 # This is about access to device's camera hardware, not data
 
+include /etc/sailjail/permissions/Sensors.permission
+
 # BEG systembus-org.maemo.resource.manager
 dbus-system.talk org.maemo.resource.manager
 dbus-system.broadcast org.maemo.resource.manager=org.maemo.resource.manager.*@/*

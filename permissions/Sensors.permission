@@ -5,3 +5,5 @@
 # x-sailjail-description = Sensors
 # x-sailjail-translation-key-long-description =
 # x-sailjail-long-description =
+
+dbus-system.talk com.nokia.SensorService
