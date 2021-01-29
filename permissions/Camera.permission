@@ -17,3 +17,7 @@ dbus-system.broadcast org.maemo.resource.manager=org.maemo.resource.manager.*@/*
 # BEG sessionbus-org.sailfishos.zxing
 dbus-user.talk org.sailfishos.zxing
 # END sessionbus-org.sailfishos.zxing
+
+# BEG systembus-org.nemomobile.devicelock
+dbus-system.talk org.nemomobile.devicelock
+# END systembus-org.nemomobile.devicelock
