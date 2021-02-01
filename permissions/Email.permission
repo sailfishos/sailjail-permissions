@@ -50,6 +50,8 @@ include /etc/sailjail/permissions/GnuPG.permission
 # Global address list
 dbus-user.talk org.sailfishos.easdaemon
 dbus-user.broadcast org.sailfishos.easdaemon=org.sailfishos.easdaemon.*@/*
+mkdir     ${PRIVILEGED}/eas-sailfish
+privileged-data eas-sailfish
 
 # Launch store for email app installation if not already installed
 dbus-user.talk com.jolla.jollastore
