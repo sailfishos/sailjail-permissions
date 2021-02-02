@@ -13,6 +13,10 @@ whitelist /usr/share/jolla-contacts
 # One case triggering this is the temporary contact card.
 include /etc/sailjail/permissions/Phone.permission
 
+# Due to contact edit card needing access for determining whether
+# an account is disabled or not, pulling it in here.
+include /etc/sailjail/permissions/Accounts.permission
+
 # To launch Messages from contact card
 dbus-user.talk org.sailfishos.Messages
 
