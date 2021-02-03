@@ -166,3 +166,7 @@ mkdir ${PRIVILEGED}
 whitelist ${PRIVILEGED}
 # but by default all content is hidden
 privileged-data -
+
+### Qt's logging rules
+whitelist ${HOME}/.config/QtProject/qtlogging.ini
+read-only ${HOME}/.config/QtProject/qtlogging.ini
