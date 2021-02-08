@@ -40,3 +40,6 @@ whitelist ${HOME}/.mozilla/captiveportal
 # Saving bookmarks to launcher feature
 # Override read-only from whitelist-common.inc
 read-write ${HOME}/.local/share/applications
+
+# Respect /etc/hosts entries.
+private-etc nsswitch.conf,resolv.conf
