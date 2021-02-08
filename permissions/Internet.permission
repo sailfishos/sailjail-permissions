@@ -12,8 +12,8 @@ protocol inet,inet6,netlink
 #net eth0
 #netfilter
 
-# Crypto config for SSL
-private-etc ssl,hosts,pki,crypto-policies
+# Crypto config for SSL, hostname resolution
+private-etc ssl,hosts,pki,crypto-policies,nsswitch.conf,resolv.conf
 
 # ca-certificates
 whitelist /usr/share/pki
