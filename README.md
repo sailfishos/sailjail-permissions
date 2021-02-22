@@ -90,6 +90,7 @@ Permissions that applications may use (names are subject to change):
 | Audio | Playing audio, changing audio configuration and showing audio controls on lockscreen. |
 | Bluetooth | Connecting to and using Bluetooth and NFC hardware. |
 | Calendar | Display and editing of calendar events. |
+| CallRecordings | Access recorded calls. |
 | Camera | Access to camera hardware to take photos or video. |
 | Contacts | Display and editing of contacts data. Access to contact cards. |
 | Documents | Access to Documents directory. |
@@ -114,6 +115,7 @@ Internal permissions that applications generally should not use directly:
 | CaptivePortal |
 | Connman |
 | DataStorages |
+| GnuPG |
 | FingerprintSensor |
 | Microphone |
 | Notifications |

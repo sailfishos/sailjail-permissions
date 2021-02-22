@@ -1,0 +1,10 @@
+# -*- mode: sh -*-
+
+# x-sailjail-translation-catalog = sailjail-permissions
+# x-sailjail-translation-key-description = permission-la-call_recordings
+# x-sailjail-description = Call recordings
+# x-sailjail-translation-key-long-description = permission-la-call_recordings_description
+# x-sailjail-long-description = Create and listen to call recordings
+
+mkdir     ${PRIVILEGED}/Phone
+privileged-data Phone
