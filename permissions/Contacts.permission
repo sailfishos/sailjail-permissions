@@ -19,6 +19,9 @@ dbus-user.talk org.sailfishos.Messages
 # To launch contacts import wizard
 dbus-user.talk com.jolla.contacts.ui
 
+dbus-user.own org.nemomobile.contacts.sqlite.*
+dbus-user.broadcast *=org.nemomobile.contacts.sqlite.*@/org/nemomobile/contacts/sqlite
+
 mkdir     ${HOME}/.local/share/system/Contacts
 whitelist ${HOME}/.local/share/system/Contacts
 
