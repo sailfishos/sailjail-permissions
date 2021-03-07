@@ -49,3 +49,9 @@ dbus-user.broadcast com.jolla.PinQuery=com.jolla.PinQuery.*@/*
 # BEG sessionbus-com.jolla.settings
 dbus-user.call com.jolla.settings=com.jolla.settings.ui.*@/*
 # END sessionbus-com.jolla.settings
+
+mkdir     ${PRIVILEGED}/Phone
+privileged-data Phone
+
+mkdir     ${PRIVILEGED}/Phone/CallRecordings
+privileged-data Phone/CallRecordings
