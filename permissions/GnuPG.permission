@@ -8,6 +8,7 @@
 
 mkdir     ${HOME}/.gnupg
 whitelist ${HOME}/.gnupg
+noblacklist ${HOME}/.gnupg
 
 private-bin gpg2
 private-bin gpg-agent
