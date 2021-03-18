@@ -8,19 +8,5 @@
 # x-sailjail-translation-key-long-description =
 # x-sailjail-long-description =
 
-### PERMISSIONS
-# x-sailjail-permission = Accounts
-# x-sailjail-permission = Phone
-# x-sailjail-permission = Email
-# x-sailjail-permission = Mozilla
-# x-sailjail-permission = Location
-# x-sailjail-permission = Privileged
-# x-sailjail-permission = Internet
-# x-sailjail-permission = Connman
-# x-sailjail-permission = Calendar
-# x-sailjail-permission = GnuPG
-# for starting messageserver5
-# x-sailjail-permission = AppLaunch
-
 ### APPLICATION
 dbus-user.own com.jolla.email.ui

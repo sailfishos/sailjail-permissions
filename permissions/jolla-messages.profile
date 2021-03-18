@@ -8,10 +8,6 @@
 # x-sailjail-translation-key-long-description =
 # x-sailjail-long-description =
 
-### PERMISSIONS
-# x-sailjail-permission = Contacts
-# x-sailjail-permission = Phone
-
 ### APPLICATION
 # FIXME: This is a legacy D-Bus service name, we need to drop it at some point
 dbus-user.own org.nemomobile.qmlmessages

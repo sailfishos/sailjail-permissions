@@ -8,11 +8,5 @@
 # x-sailjail-translation-key-long-description =
 # x-sailjail-long-description =
 
-### PERMISSIONS
-# x-sailjail-permission = Accounts
-# x-sailjail-permission = Calendar
-# x-sailjail-permission = Privileged
-# x-sailjail-permission = SyncFW
-
 ### APPLICATION
 dbus-user.own com.jolla.calendar.ui
