@@ -29,4 +29,4 @@ dbus-user.own com.google.code.AccountsSSO.Accounts.*
 dbus-user.broadcast com.google.code.AccountsSSO.Accounts.*=com.google.code.AccountsSSO.Accounts@/ServiceType/*
 
 # buteo profiles
-include /etc/sailjail/permissions/SyncFW.permission
+include /etc/sailjail/permissions/Synchronization.permission

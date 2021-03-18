@@ -105,7 +105,7 @@ Permissions that applications may use (names are subject to change):
 | Phone | Make Phone calls, either directly or through system voice call UI. |
 | Pictures | Access to Pictures directory and thumbnails. |
 | Sharing | Use of sharing pages in the application to share data via Bluetooth, email or other accounts. |
-| SyncFW | Access to synchronization framework. |
+| Synchronization | Access to synchronization framework. |
 | Videos | Access to Videos directory and thumbnails. |
 
 Internal permissions that applications generally should not use directly:
