@@ -8,16 +8,5 @@
 # x-sailjail-translation-key-long-description =
 # x-sailjail-long-description =
 
-### PERMISSIONS
-# x-sailjail-permission = Bluetooth
-# x-sailjail-permission = Phone
-# x-sailjail-permission = Tracker
-# x-sailjail-permission = Thumbnails
-# x-sailjail-permission = Pictures
-# x-sailjail-permission = Accounts
-# x-sailjail-permission = Contacts
-# x-sailjail-permission = SyncFW
-# x-sailjail-permission = Privileged
-
 ### APPLICATION
 dbus-user.own com.jolla.contacts.ui

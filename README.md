@@ -100,7 +100,7 @@ Permissions that applications may use (names are subject to change):
 | Location | Use GPS and positioning. |
 | MediaIndexing | Access to Tracker to list files on device. If you have access to a data directory, you may want to use also this. |
 | Messages | Access to message data and to send SMS messages. |
-| Mozilla | If you use Gecko based WebView you need this. |
+| WebView | If you use Gecko based WebView you need this. |
 | Music | Access to Music directory, playlists and coverart cache. |
 | Phone | Make Phone calls, either directly or through system voice call UI. |
 | Pictures | Access to Pictures directory and thumbnails. |

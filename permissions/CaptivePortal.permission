@@ -5,6 +5,6 @@
 # x-sailjail-description = Captive portal login
 # x-sailjail-translation-key-long-description = permission-la-captive_portal_description
 # x-sailjail-long-description = Grant access to the network
-include /etc/sailjail/permissions/Mozilla.permission
+include /etc/sailjail/permissions/WebView.permission
 
 whitelist /usr/share/sailfish-browser/
