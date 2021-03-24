@@ -8,3 +8,4 @@
 
 mkdir     ${HOME}/Documents
 whitelist ${HOME}/Documents
+whitelist ${HOME}/android_storage/Documents
