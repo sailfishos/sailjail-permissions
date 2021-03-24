@@ -9,4 +9,7 @@
 mkdir     ${HOME}/Videos
 whitelist ${HOME}/Videos
 
+# Android storage
+whitelist ${HOME}/android_storage/Movies
+
 include /etc/sailjail/permissions/Thumbnails.permission
