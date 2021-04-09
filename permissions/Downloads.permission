@@ -6,7 +6,8 @@
 # x-sailjail-translation-key-long-description = permission-la-downloads_description
 # x-sailjail-long-description = Use downloaded files
 
-mkdir     ${HOME}/Downloads
-whitelist ${HOME}/Downloads
+mkdir       ${HOME}/Downloads
+noblacklist ${HOME}/Downloads
+whitelist   ${HOME}/Downloads
 
 whitelist ${HOME}/android_storage/Download

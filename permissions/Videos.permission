@@ -6,8 +6,9 @@
 # x-sailjail-translation-key-long-description = permission-la-videos_description
 # x-sailjail-long-description = Use stored video files
 
-mkdir     ${HOME}/Videos
-whitelist ${HOME}/Videos
+mkdir       ${HOME}/Videos
+noblacklist ${HOME}/Videos
+whitelist   ${HOME}/Videos
 
 # Android storage
 whitelist ${HOME}/android_storage/Movies

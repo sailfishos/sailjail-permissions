@@ -75,7 +75,18 @@ to match the declaration added to the desktop file.
     app->setApplicationName(QStringLiteral("myapp"));
     ...
 
-In future this will be done automatically by the Sailfish App library (libsailfishapp).
+When Sailfish App library (libsailfishapp) is used these values are set automatically to the values
+set in desktop file.
+
+### Files shared with other applications
+
+Well-known directories such as Documents, Downloads, Music, Pictures and Videos contain files that
+are available for applications with respective permissions. Those directories must be used when the
+data needs to be accessible by other applications.
+
+If application doesn't have a permission for a directory, all data in that directory will be hidden
+and the application sees only an empty read-only directory in that path. This allows to regular file
+access checks to function in expected way.
 
 ## Permissions
 

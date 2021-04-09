@@ -6,8 +6,9 @@
 # x-sailjail-translation-key-long-description = permission-la-pictures_description
 # x-sailjail-long-description = Use stored picture files
 
-mkdir     ${HOME}/Pictures
-whitelist ${HOME}/Pictures
+mkdir       ${HOME}/Pictures
+noblacklist ${HOME}/Pictures
+whitelist   ${HOME}/Pictures
 
 whitelist ${HOME}/android_storage/Pictures
 whitelist ${HOME}/android_storage/DCIM
