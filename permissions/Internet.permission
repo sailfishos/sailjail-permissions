@@ -8,6 +8,7 @@
 
 # XXX: does "netlink" really belong here?
 ### network
+ignore net none
 protocol inet,inet6,netlink
 #net eth0
 #netfilter
