@@ -168,3 +168,20 @@ privileged-data -
 ### Qt's logging rules
 whitelist ${HOME}/.config/QtProject/qtlogging.ini
 read-only ${HOME}/.config/QtProject/qtlogging.ini
+
+### Disable access to well-known directories
+# These rules say that there is an empty read-only directory inside
+# sandbox. They are prevented separately for each directory with
+# noblacklist rule in their respective permission file
+mkdir     ${HOME}/Documents
+blacklist ${HOME}/Documents
+mkdir     ${HOME}/Downloads
+blacklist ${HOME}/Downloads
+mkdir     ${HOME}/Pictures
+blacklist ${HOME}/Pictures
+mkdir     ${HOME}/Playlists
+blacklist ${HOME}/Playlists
+mkdir     ${HOME}/Music
+blacklist ${HOME}/Music
+mkdir     ${HOME}/Videos
+blacklist ${HOME}/Videos

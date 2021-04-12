@@ -6,11 +6,13 @@
 # x-sailjail-translation-key-long-description = permission-la-music_description
 # x-sailjail-long-description = Use stored music files
 
-mkdir     ${HOME}/Music
-whitelist ${HOME}/Music
+mkdir       ${HOME}/Music
+noblacklist ${HOME}/Music
+whitelist   ${HOME}/Music
 
-mkdir     ${HOME}/Playlists
-whitelist ${HOME}/Playlists
+mkdir       ${HOME}/Playlists
+noblacklist ${HOME}/Playlists
+whitelist   ${HOME}/Playlists
 
 mkdir     ${HOME}/.cache/media-art
 whitelist ${HOME}/.cache/media-art
