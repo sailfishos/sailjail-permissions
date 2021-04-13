@@ -59,7 +59,7 @@ OrganizationName and ApplicationName is used for granting for the application wr
 Access above directories from the application through QStandardPaths
 1. Application data location - QStandardPaths::writableLocation(QStandardPaths::AppDataLocation)
 2. Application cache location - QStandardPaths::writableLocation(QStandardPaths::CacheLocation)
-3. Application config location  - QStandardPaths::writableLocation(QStandardPaths::CacheLocation)
+3. Application config location  - QStandardPaths::writableLocation(QStandardPaths::ConfigLocation)
 
 Only these directories can be used for storing application specific data that needs to persist over
 application restarts.
@@ -80,7 +80,7 @@ set in desktop file.
 
 ### Files shared with other applications
 
-Well-known directories such as Documents, Downloads, Music, Pictures and Videos contain files that
+Directories under user home such as Documents, Downloads, Music, Pictures and Videos contain files that
 are available for applications with respective permissions. Those directories must be used when the
 data needs to be accessible by other applications.
 
@@ -115,8 +115,10 @@ Permissions that applications may use (names are subject to change):
 | Music | Access to Music directory, playlists and coverart cache. |
 | Phone | Make Phone calls, either directly or through system voice call UI. |
 | Pictures | Access to Pictures directory and thumbnails. |
+| PublicDir | Access to Public directory. |
 | Sharing | Use of sharing pages in the application to share data via Bluetooth, email or other accounts. |
 | Synchronization | Access to synchronization framework. |
+| UserDirs | Access to Documents, Downloads, Music, Pictures, Public and Video directories. |
 | Videos | Access to Videos directory and thumbnails. |
 
 Internal permissions that applications generally should not use directly:

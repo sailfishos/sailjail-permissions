@@ -169,10 +169,12 @@ privileged-data -
 whitelist ${HOME}/.config/QtProject/qtlogging.ini
 read-only ${HOME}/.config/QtProject/qtlogging.ini
 
-### Disable access to well-known directories
+### Disable access to well-known directories (XDG user directories) by default
 # These rules say that there is an empty read-only directory inside
 # sandbox. They are prevented separately for each directory with
 # noblacklist rule in their respective permission file
+mkdir     ${HOME}/Desktop
+blacklist ${HOME}/Desktop
 mkdir     ${HOME}/Documents
 blacklist ${HOME}/Documents
 mkdir     ${HOME}/Downloads
@@ -185,3 +187,7 @@ mkdir     ${HOME}/Music
 blacklist ${HOME}/Music
 mkdir     ${HOME}/Videos
 blacklist ${HOME}/Videos
+mkdir     ${HOME}/Public
+blacklist ${HOME}/Public
+mkdir     ${HOME}/Templates
+blacklist ${HOME}/Templates
