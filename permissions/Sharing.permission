@@ -32,6 +32,10 @@ dbus-user.broadcast com.jolla.PinQuery=com.jolla.PinQuery.*@/*
 dbus-user.talk com.jolla.Connectiond
 dbus-user.broadcast com.jolla.Connectiond=com.jolla.Connectiond.*@/*
 
+# Sharing process
+dbus-user.talk org.sailfishos.share
+dbus-user.broadcast org.sailfishos.share=org.sailfishos.share.*@/*
+
 # Sharing MMS
 dbus-system.talk org.nemomobile.MmsHandler
 dbus-system.broadcast org.nemomobile.MmsHandler=org.nemomobile.MmsHandler.*@/*
