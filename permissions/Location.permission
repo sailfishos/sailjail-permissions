@@ -8,9 +8,6 @@
 
 whitelist /usr/share/GConf/gsettings/geoclue
 
-mkdir     ${PRIVILEGED}/Location
-privileged-data Location
-
 private-etc location
 
 # BEG sessionbus-org.freedesktop.GeoClue.resource
