@@ -116,6 +116,7 @@ Permissions that applications may use (names are subject to change):
 | Phone | Make Phone calls, either directly or through system voice call UI. |
 | Pictures | Access to Pictures directory and thumbnails. |
 | PublicDir | Access to Public directory. |
+| RemovableMedia | Use memory cards and USB sticks. |
 | Sharing | Use of sharing pages in the application to share data via Bluetooth, email or other accounts. |
 | Synchronization | Access to synchronization framework. |
 | UserDirs | Access to Documents, Downloads, Music, Pictures, Public and Video directories. |
@@ -127,7 +128,6 @@ Internal permissions that applications generally should not use directly:
 | Base       | Base set of permissions that every application is granted implicitly. |
 | CaptivePortal |
 | Connman |
-| DataStorages |
 | GnuPG |
 | FingerprintSensor |
 | Microphone |
