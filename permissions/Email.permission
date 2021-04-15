@@ -19,7 +19,8 @@ mkdir     ${HOME}/Downloads/mail_attachments
 whitelist ${HOME}/Downloads/mail_attachments
 
 # MessageServer socket
-whitelist /tmp/qcop-server-0
+noblacklist ${RUNUSER}/messageserver
+read-only   ${RUNUSER}/messageserver
 
 # Messaging framework
 mkdir     ${HOME}/.qmf
