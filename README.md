@@ -135,7 +135,8 @@ Internal permissions that applications generally should not use directly:
 | PinQuery |
 | Sensors |
 | Thumbnails |
-| UDisks |
+| UDisks | Permissions to call UDisks functions, includes UDisksListen. |
+| UDisksListen | Permissions to listen signals and property changes on UDisks2 interfaces. |
 
 ### Permission metadata format
 

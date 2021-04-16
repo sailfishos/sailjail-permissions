@@ -1,16 +1,19 @@
 # -*- mode: sh -*-
 
-# FIXME: what exactly requires udisks???
-
 # x-sailjail-translation-catalog =
-# x-sailjail-translation-key-description =
-# x-sailjail-description = Use UDisks2
-# x-sailjail-translation-key-long-description =
-# x-sailjail-long-description =
+# x-sailjail-translation-key-description = permission-la-udisks2
+# x-sailjail-description = Manage and access storage devices
+# x-sailjail-translation-key-long-description = permission-la-udisks2_description
+# x-sailjail-long-description = Permission to access the storage devices, allows to call device D-Bus methods.
 
-# BEG systembus-org.freedesktop.UDisks2.resource
-dbus-system.talk org.freedesktop.UDisks2
-dbus-system.broadcast org.freedesktop.UDisks2=org.freedesktop.UDisks2.*@/*
-dbus-system.talk org.freedesktop.UDisks2.*
-dbus-system.broadcast org.freedesktop.UDisks2.*=org.freedesktop.UDisks2.*@/*
-# END systembus-org.freedesktop.UDisks2.resource
+include /etc/sailjail/permissions/UDisksListen.permission
+
+# BEG systembus-org.freedesktop.UDisks2 method call access
+dbus-system.call org.freedesktop.UDisks2=org.freedesktop.DBus.Properties.Set@/*
+dbus-system.call org.freedesktop.UDisks2=org.freedesktop.UDisks2.Block.Format@/*
+dbus-system.call org.freedesktop.UDisks2=org.freedesktop.UDisks2.Block.Rescan@/*
+dbus-system.call org.freedesktop.UDisks2=org.freedesktop.UDisks2.Encrypted.Lock@/*
+dbus-system.call org.freedesktop.UDisks2=org.freedesktop.UDisks2.Encrypted.Unlock@/*
+dbus-system.call org.freedesktop.UDisks2=org.freedesktop.UDisks2.FileSystem.Mount@/*
+dbus-system.call org.freedesktop.UDisks2=org.freedesktop.UDisks2.FileSystem.Unmount@/*
+# END systembus-org.freedesktop.UDisks2 method call access
