@@ -6,40 +6,23 @@
 # x-sailjail-translation-key-long-description = permission-la-phone_description
 # x-sailjail-long-description = Make phone calls
 
-# BEG systembus-org.ofono.resource
+# Ofono to place calls etc.
 dbus-system.talk org.ofono
 dbus-system.broadcast org.ofono=org.ofono.*@/*
 dbus-system.broadcast org.ofono=org.nemomobile.ofono.*@/*
-# END systembus-org.ofono.resource
 
 # Voicecall service
 dbus-user.talk org.nemomobile.voicecall
 dbus-user.broadcast org.nemomobile.voicecall=org.nemomobile.voicecall.*@/*
-
-# BEG sessionbus-org.freedesktop.Telepathy.resource
 dbus-user.talk org.freedesktop.Telepathy
 dbus-user.broadcast org.freedesktop.Telepathy=org.freedesktop.Telepathy.*@/*
 dbus-user.talk org.freedesktop.Telepathy.*
 dbus-user.broadcast org.freedesktop.Telepathy.*=org.freedesktop.Telepathy.*@/*
-# END sessionbus-org.freedesktop.Telepathy.resource
 
-mkdir     ${HOME}/.local/share/commhistory
-whitelist ${HOME}/.local/share/commhistory
-
-# BEG sessionbus-org.nemomobile.CommHistory.resource
-dbus-user.talk org.nemomobile.CommHistory
-dbus-user.broadcast org.nemomobile.CommHistory=org.nemomobile.CommHistory.*@/*
-# END sessionbus-org.nemomobile.CommHistory.resource
-
-# BEG systembus-org.ofono.SmartMessagingAgent.resource
-dbus-system.talk org.ofono.SmartMessagingAgent
-# END systembus-org.ofono.SmartMessagingAgent.resource
-
-# BEG sessionbus-com.jolla.voicecall.ui.resource
+# Open Phone UI to make calls
 dbus-user.talk com.jolla.voicecall.ui
-# END sessionbus-com.jolla.voicecall.ui.resource
 
-# Have audio permissions implicitly.
+# Have audio permissions implicitly
 include /etc/sailjail/permissions/Audio.permission
 
 # Allow requesting sim pin

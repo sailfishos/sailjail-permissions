@@ -1,0 +1,14 @@
+# -*- mode: sh -*-
+
+# x-sailjail-translation-catalog = sailjail-permissions
+# x-sailjail-translation-key-description = permission-la-calllogs
+# x-sailjail-description = Communication history
+# x-sailjail-translation-key-long-description = permission-la-calllogs_description
+# x-sailjail-long-description = View and edit previous calls and messages
+
+mkdir     ${HOME}/.local/share/commhistory
+whitelist ${HOME}/.local/share/commhistory
+
+dbus-user.talk org.nemomobile.CommHistory
+dbus-user.broadcast org.nemomobile.CommHistory=org.nemomobile.CommHistory.*@/org/nemomobile/CommHistory
+dbus-user.call org.nemomobile.CommHistory=org.nemomobile.CommHistory.*@/org/nemomobile/CommHistory
