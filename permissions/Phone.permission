@@ -27,7 +27,3 @@ include /etc/sailjail/permissions/Audio.permission
 
 # Allow requesting sim pin
 include /etc/sailjail/permissions/PinQuery.permission
-
-# BEG sessionbus-com.jolla.settings
-dbus-user.call com.jolla.settings=com.jolla.settings.ui.*@/*
-# END sessionbus-com.jolla.settings
