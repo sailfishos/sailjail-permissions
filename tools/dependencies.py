@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 #
 # Visualises permission dependencies
-# Copyright (c) Jolla Ltd. 2021
+# Copyright (c) 2021 Jolla Ltd.
+# Copyright (c) 2021 Open Mobile Platform LLC.
 #
 # You may use this file under the terms of the BSD license as follows:
 #
@@ -127,8 +128,8 @@ class Forest:
     def digraph(self):
         dot = graphviz.Digraph()
         for node in self.nodes.values():
-            dot.attr('node', style=node.style, fillcolor=node.color)
-            dot.node(node.name, node.text)
+            dot.node(node.name, node.text, style=node.style,
+                     fillcolor=node.color)
             for child in node.children:
                 dot.edge(node.name, child.name, arrowhead='vee')
         return dot
