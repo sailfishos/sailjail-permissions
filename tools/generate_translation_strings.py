@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 # Generates translation strings for lupdate to process
+# This is a bit naive as it expects a specific order of the keys
 
 import os, os.path, sys, re, dataclasses
 
@@ -10,22 +11,30 @@ class Generator:
         "long-description",
     }
 
-    RE = re.compile(r"#\s*x-sailjail-(?P<type>translation-key-)?(?P<name>[\w-]+)\s*=\s*(?P<value>.*)\s*")
+    CATALOG = re.compile(r"#\s*x-sailjail-(?P<type>translation-catalog)\s*=\s*(?P<value>.*)\s*")
+    TRANSLATION = re.compile(r"#\s*x-sailjail-(?P<type>translation-key-)?(?P<name>[\w-]+)\s*=\s*(?P<value>.*)\s*")
 
     def __init__(self, file):
         self.file = file
         self.translations = {name : Translation(name) for name in self.KEYS}
 
     def process_line(self, line):
-        match = self.RE.match(line)
-        if match is not None and match.group('name') in self.translations:
-            name = match.group('name')
-            if match.group('type') == 'translation-key-':
-                self.translations[name].key =  match.group('value')
-            else:
-                self.translations[name].text = match.group('value')
-            if self.translations[name]:
-                return self.translations.pop(name)
+        match = self.CATALOG.match(line)
+        if match is not None:
+            if match.group('value') != "sailjail-permissions":
+                if match.group('value') != "":
+                    print(f"Wrong translation catalog, skipping {self.file}", file=sys.stderr)
+                self.translations.clear()
+        else:
+            match = self.TRANSLATION.match(line)
+            if match is not None and match.group('name') in self.translations:
+                name = match.group('name')
+                if match.group('type') == 'translation-key-':
+                    self.translations[name].key = match.group('value')
+                else:
+                    self.translations[name].text = match.group('value')
+                if self.translations[name]:
+                    return self.translations.pop(name)
 
     def __iter__(self):
         try:
@@ -34,6 +43,8 @@ class Generator:
                     result = self.process_line(line)
                     if result is not None:
                         yield result
+                    if not self.translations:
+                        break
         except UnicodeDecodeError:
             print(f"Invalid character in file: {self.file}", file=sys.stderr)
             raise
