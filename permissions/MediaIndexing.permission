@@ -7,6 +7,7 @@
 # x-sailjail-long-description = List files stored on device
 
 whitelist /usr/share/tracker
+whitelist /usr/share/tracker3
 
 mkdir     ${HOME}/.cache/tracker
 whitelist ${HOME}/.cache/tracker
@@ -20,3 +21,6 @@ dbus-user.broadcast org.freedesktop.Tracker1=org.freedesktop.Tracker1.*@/*
 dbus-user.talk org.freedesktop.Tracker1.*
 dbus-user.broadcast org.freedesktop.Tracker1.*=org.freedesktop.Tracker1.*@/*
 # END sessionbus-org.freedesktop.Tracker1.resource
+
+dbus-user.talk org.freedesktop.Tracker3.Miner.Files
+dbus-user.broadcast org.freedesktop.Tracker3.Miner.Files=org.freedesktop.Tracker3.*@/*
