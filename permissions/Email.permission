@@ -7,8 +7,9 @@
 # x-sailjail-long-description = Read and send email
 
 # MessageServer socket
-noblacklist ${RUNUSER}/messageserver
-read-only   ${RUNUSER}/messageserver
+mkdir     ${RUNUSER}/messageserver
+whitelist ${RUNUSER}/messageserver
+read-only ${RUNUSER}/messageserver
 
 # Messaging framework
 mkdir     ${HOME}/.qmf
