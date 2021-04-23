@@ -35,5 +35,4 @@ dbus-system.talk org.ofono.SmartMessagingAgent
 # END systembus-org.ofono.SmartMessagingAgent.resource
 
 # Allow requesting sim pin
-dbus-user.talk com.jolla.PinQuery
-dbus-user.broadcast com.jolla.PinQuery=com.jolla.PinQuery.*@/*
+include /etc/sailjail/permissions/PinQuery.permission

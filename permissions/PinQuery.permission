@@ -1,0 +1,5 @@
+# Privileged D-Bus API
+# Allows to open pin query dialog
+dbus-user.talk com.jolla.PinQuery
+dbus-user.call com.jolla.PinQuery=com.jolla.PinQuery.requestSimPin@/com/jolla/PinQuery
+dbus-user.broadcast com.jolla.PinQuery=com.jolla.PinQuery.requestCanceled@/com/jolla/PinQuery
