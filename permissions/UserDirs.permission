@@ -1,0 +1,20 @@
+# -*- mode: sh -*-
+
+# x-sailjail-translation-catalog = sailjail-permissions
+# x-sailjail-translation-key-description = permission-la-userdirs
+# x-sailjail-description = User directories
+# x-sailjail-translation-key-long-description = permission-la-userdirs_description
+# x-sailjail-long-description = Access common user directories
+
+include /etc/sailjail/permissions/Documents.permission
+
+include /etc/sailjail/permissions/Downloads.permission
+
+include /etc/sailjail/permissions/Music.permission
+
+include /etc/sailjail/permissions/Pictures.permission
+
+include /etc/sailjail/permissions/PublicDir.permission
+
+include /etc/sailjail/permissions/Videos.permission
+

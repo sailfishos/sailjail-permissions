@@ -1,0 +1,11 @@
+# -*- mode: sh -*-
+
+# x-sailjail-translation-catalog = sailjail-permissions
+# x-sailjail-translation-key-description = permission-la-publicdir
+# x-sailjail-description = Public directory
+# x-sailjail-translation-key-long-description = permission-la-publicdir_description
+# x-sailjail-long-description = Access Public directory
+
+mkdir       ${HOME}/Public
+noblacklist ${HOME}/Public
+whitelist   ${HOME}/Public
