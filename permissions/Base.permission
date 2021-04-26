@@ -170,6 +170,10 @@ privileged-data -
 whitelist ${HOME}/.config/QtProject/qtlogging.ini
 read-only ${HOME}/.config/QtProject/qtlogging.ini
 
+### Block direct access to sound devices and configs
+# Disables access to pulseaudio by default
+nosound
+
 ### Disable access to well-known directories (XDG user directories) by default
 # These rules say that there is an empty read-only directory inside
 # sandbox. They are prevented separately for each directory with

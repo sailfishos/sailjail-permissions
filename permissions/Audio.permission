@@ -2,9 +2,16 @@
 
 # x-sailjail-translation-catalog = sailjail-permissions
 # x-sailjail-translation-key-description = permission-la-audio
-# x-sailjail-description = Play audio
+# x-sailjail-description = Play and record audio
 # x-sailjail-translation-key-long-description = permission-la-audio_description
-# x-sailjail-long-description = Play audio and show audio controls on lockscreen
+# x-sailjail-long-description = Play and record audio, and show audio controls on lockscreen
+
+### Do not prevent access to Pulseaudio socket etc. audio devices
+# FIXME: Separete permissions as this gives access to Pulseaudio, Alsa and to microphone.
+# In order to support recording with microphone use the Microphone permission
+# separately as this functionality is subject to change when Pulseaudio streams
+# can be isolated with permissions.
+ignore nosound
 
 private-etc pulse
 
