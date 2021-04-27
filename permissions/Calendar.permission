@@ -11,8 +11,5 @@ whitelist /usr/share/jolla-calendar
 mkdir     ${PRIVILEGED}/Calendar
 privileged-data Calendar
 
-mkdir     ${PRIVILEGED}/autofill
-privileged-data autofill
-
 # Trigger calendar event view or import
 dbus-user.talk com.jolla.calendar.ui
