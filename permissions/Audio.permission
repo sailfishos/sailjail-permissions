@@ -8,6 +8,9 @@
 
 private-etc pulse
 
+whitelist ${RUNUSER}/pulse
+read-only ${RUNUSER}/pulse
+
 mkdir     ${HOME}/.config/pulse
 whitelist ${HOME}/.config/pulse
 

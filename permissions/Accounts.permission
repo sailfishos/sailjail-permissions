@@ -11,6 +11,12 @@ whitelist /usr/share/xml/accounts
 whitelist /usr/share/accounts
 whitelist /usr/share/libsailfishkeyprovider/storedkeys.ini
 
+# To create accounts using libsignon
+whitelist ${RUNUSER}/signond
+read-only ${RUNUSER}/signond
+# Application must be able to create a socket here
+whitelist ${RUNUSER}/signonui
+
 mkdir     ${PRIVILEGED}/Accounts
 privileged-data Accounts
 
