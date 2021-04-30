@@ -43,8 +43,7 @@ dbus-user.talk com.jolla.voicecall.ui
 include /etc/sailjail/permissions/Audio.permission
 
 # Allow requesting sim pin
-dbus-user.talk com.jolla.PinQuery
-dbus-user.broadcast com.jolla.PinQuery=com.jolla.PinQuery.*@/*
+include /etc/sailjail/permissions/PinQuery.permission
 
 # BEG sessionbus-com.jolla.settings
 dbus-user.call com.jolla.settings=com.jolla.settings.ui.*@/*

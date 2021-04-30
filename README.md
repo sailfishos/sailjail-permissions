@@ -132,6 +132,7 @@ Internal permissions that applications generally should not use directly:
 | FingerprintSensor |
 | Microphone |
 | Notifications |
+| PinQuery |
 | Sensors |
 | Thumbnails |
 | UDisks |
