@@ -1,0 +1,22 @@
+# -*- mode: sh -*-
+
+# x-sailjail-translation-catalog =
+# x-sailjail-translation-key-description = permission-la-udisks2_listen
+# x-sailjail-description = Access storage device information
+# x-sailjail-translation-key-long-description = permission-la-udisks2_description
+# x-sailjail-long-description = Permissions to access properties and to listen to property changes on storage devices
+
+# BEG systembus-org.freedesktop.UDisks2.resource
+dbus-system.broadcast org.freedesktop.UDisks2=org.freedesktop.UDisks2.*@/*
+dbus-system.broadcast org.freedesktop.UDisks2.*=org.freedesktop.UDisks2.*@/*
+
+# END systembus-org.freedesktop.UDisks2.resource
+# BEG systembus-org.freedesktop.UDisks2 call access
+### Allow to get available functions and access properties with getters
+dbus-system.call org.freedesktop.UDisks2=org.freedesktop.DBus.Introspectable.Introspect@/*
+dbus-system.call org.freedesktop.UDisks2=org.freedesktop.DBus.Properties.Get@/*
+dbus-system.call org.freedesktop.UDisks2=org.freedesktop.DBus.Properties.GetAll@/*
+### Not listed in udisks2defines.h but exists in the nemo-qml-plugin-systemsettings code and is thus required by many apps
+### TODO: remove when nemo-qml-plugin-systemsettings do not need this anymore
+dbus-system.call org.freedesktop.UDisks2=org.freedesktop.UDisks2.Manager.GetBlockDevices@/org/freedesktop/UDisks2/Manager
+# END systembus-org.freedesktop.UDisks2 call access

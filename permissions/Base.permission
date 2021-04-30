@@ -158,8 +158,8 @@ seccomp
 ### notifications
 include /etc/sailjail/permissions/Notifications.permission
 
-### udisks2
-include /etc/sailjail/permissions/UDisks.permission
+### Disable access to media by default
+disable-mnt
 
 ### privileged data
 # make sure privileged data directory exists

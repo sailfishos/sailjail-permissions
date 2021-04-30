@@ -1,0 +1,12 @@
+# -*- mode: sh -*-
+
+# x-sailjail-translation-catalog = sailjail-permissions
+# x-sailjail-translation-key-description = permission-la-removable_media
+# x-sailjail-description = Removable media
+# x-sailjail-translation-key-long-description = permission-la-removable_media_description
+# x-sailjail-long-description = Use memory cards and USB sticks
+
+### Allow to listen/talk to udisks2
+include /etc/sailjail/permissions/UDisksListen.permission
+
+ignore disable-mnt
