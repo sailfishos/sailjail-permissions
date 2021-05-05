@@ -12,8 +12,8 @@ mkdir     ${HOME}/.local/nemo-transferengine
 whitelist ${HOME}/.local/nemo-transferengine
 
 # BEG sessionbus-org.nemo.transferengine.resource
-dbus-user.talk org.nemo.transferengine
-dbus-user.broadcast org.nemo.transferengine=org.nemo.transferengine.*@/*
+dbus-user.talk org.nemo.transferengine.discovery
+dbus-user.broadcast org.nemo.transferengine.discovery=org.nemo.transferengine.discovery.*@/*
 # END sessionbus-org.nemo.transferengine.resource
 
 include /etc/sailjail/permissions/Bluetooth.permission
@@ -33,8 +33,8 @@ dbus-user.talk com.jolla.Connectiond
 dbus-user.broadcast com.jolla.Connectiond=com.jolla.Connectiond.*@/*
 
 # Sharing process
-dbus-user.talk org.sailfishos.share
-dbus-user.broadcast org.sailfishos.share=org.sailfishos.share.*@/*
+dbus-user.talk org.sailfishos.share.discovery
+dbus-user.broadcast org.sailfishos.share.discovery=org.sailfishos.share.discovery.*@/*
 
 # Sharing MMS
 dbus-system.talk org.nemomobile.MmsHandler
