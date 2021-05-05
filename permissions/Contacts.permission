@@ -30,8 +30,5 @@ whitelist ${HOME}/.local/share/system/Contacts
 mkdir     ${PRIVILEGED}/Contacts
 privileged-data Contacts
 
-mkdir     ${PRIVILEGED}/autofill
-privileged-data autofill
-
 mkdir     ${HOME}/.local/share/data/avatars
 whitelist ${HOME}/.local/share/data/avatars
