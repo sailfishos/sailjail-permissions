@@ -103,6 +103,7 @@ Permissions that applications may use (names are subject to change):
 | Calendar | Display and editing of calendar events. |
 | CallRecordings | Access recorded calls. |
 | Camera | Access to camera hardware to take photos or video. |
+| CommunicationHistory | Access call and message history. |
 | Contacts | Display and editing of contacts data. Access to contact cards. |
 | Documents | Access to Documents directory. |
 | Downloads | Access to Downloads directory. |
