@@ -98,7 +98,7 @@ Permissions that applications may use (names are subject to change):
 | Ambience   | Set and edit ambiences. |
 | AppLaunch  | Launching and stopping systemd services. This is usually needed for background tasks. |
 | ApplicationInstallation | Installing and uninstalling applications. |
-| Audio | Playing audio, changing audio configuration and showing audio controls on lockscreen. |
+| Audio | Playing and recording audio (since Pulseaudio streams cannot be separated both are enabled with this, but it is subject to change), changing audio configuration and showing audio controls on lockscreen. |
 | Bluetooth | Connecting to and using Bluetooth and NFC hardware. |
 | Calendar | Display and editing of calendar events. |
 | CallRecordings | Access recorded calls. |
@@ -112,7 +112,7 @@ Permissions that applications may use (names are subject to change):
 | Location | Use GPS and positioning. |
 | MediaIndexing | Access to Tracker to list files on device. If you have access to a data directory, you may want to use also this. |
 | Messages | Access to message data and to send SMS messages. |
-| WebView | If you use Gecko based WebView you need this. |
+| Microphone | Record audio with microphone. Use Audio permission for playback of the recorded audio (but since Pulseaudio streams cannot be separated this enables also audio playback, which is subject to change). |
 | Music | Access to Music directory, playlists and coverart cache. |
 | Phone | Make Phone calls, either directly or through system voice call UI. |
 | Pictures | Access to Pictures directory and thumbnails. |
@@ -122,6 +122,7 @@ Permissions that applications may use (names are subject to change):
 | Synchronization | Access to synchronization framework. |
 | UserDirs | Access to Documents, Downloads, Music, Pictures, Public and Video directories. |
 | Videos | Access to Videos directory and thumbnails. |
+| WebView | If you use Gecko based WebView you need this. |
 
 Internal permissions that applications generally should not use directly:
 | Permission | Description |
@@ -131,7 +132,6 @@ Internal permissions that applications generally should not use directly:
 | Connman |
 | GnuPG |
 | FingerprintSensor |
-| Microphone |
 | Notifications |
 | PinQuery |
 | Sensors |
