@@ -14,6 +14,9 @@ dbus-user.broadcast org.freedesktop.Telepathy=org.freedesktop.Telepathy.*@/*
 dbus-user.talk org.freedesktop.Telepathy.*
 dbus-user.broadcast org.freedesktop.Telepathy.*=org.freedesktop.Telepathy.*@/*
 
+# Application specific Telepathy client D-Bus path
+dbus-user.own org.freedesktop.Telepathy.Client.${OrganizationName}.${ApplicationName}
+
 # Temporary directory for outgoing MMS
 mkdir     ${HOME}/.cache/commhistory-tmp
 whitelist ${HOME}/.cache/commhistory-tmp

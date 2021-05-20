@@ -11,7 +11,5 @@
 ### APPLICATION
 # FIXME: This is a legacy D-Bus service name, we need to drop it at some point
 dbus-user.own org.nemomobile.qmlmessages
-# FIXME: another systematic dbus-name to deal with?
-dbus-user.own org.freedesktop.Telepathy.Client.qmlmessages
 
 dbus-user.call com.jolla.settings=com.jolla.settings.ui.showPage@/com/jolla/settings/ui
