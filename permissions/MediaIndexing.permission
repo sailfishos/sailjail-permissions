@@ -8,6 +8,8 @@
 
 whitelist /usr/share/tracker
 whitelist /usr/share/tracker3
+whitelist /usr/share/tracker-miners
+whitelist /usr/share/tracker3-miners
 
 mkdir     ${HOME}/.cache/tracker
 whitelist ${HOME}/.cache/tracker
