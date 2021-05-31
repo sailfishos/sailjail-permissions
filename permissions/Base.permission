@@ -166,6 +166,12 @@ whitelist ${PRIVILEGED}
 # but by default all content is hidden
 privileged-data -
 
+### User's dconf
+mkdir ${HOME}/.config/dconf
+mkdir ${HOME}/.cache/dconf
+whitelist ${HOME}/.config/dconf
+whitelist ${HOME}/.cache/dconf
+
 ### Qt's logging rules
 whitelist ${HOME}/.config/QtProject/qtlogging.ini
 read-only ${HOME}/.config/QtProject/qtlogging.ini
