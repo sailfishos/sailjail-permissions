@@ -21,18 +21,8 @@ include /etc/sailjail/permissions/AppLaunch.permission
 # Connectivity
 include /etc/sailjail/permissions/Internet.permission
 
-# Adding attachments
-include /etc/sailjail/permissions/Documents.permission
-include /etc/sailjail/permissions/Pictures.permission
-include /etc/sailjail/permissions/Videos.permission
-include /etc/sailjail/permissions/Music.permission
-include /etc/sailjail/permissions/Downloads.permission
-
 # Sync profiles and manual syncing of folders.
 include /etc/sailjail/permissions/Synchronization.permission
-
-# Media Indexing for above
-include /etc/sailjail/permissions/MediaIndexing.permission
 
 # Sign emails with GnuPG
 include /etc/sailjail/permissions/GnuPG.permission
