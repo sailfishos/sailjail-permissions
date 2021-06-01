@@ -13,4 +13,7 @@ whitelist   ${HOME}/Pictures
 whitelist ${HOME}/android_storage/Pictures
 whitelist ${HOME}/android_storage/DCIM
 
+mkdir     ${PRIVILEGED}/Images
+privileged-data Images
+
 include /etc/sailjail/permissions/Thumbnails.permission
