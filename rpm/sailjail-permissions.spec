@@ -11,6 +11,7 @@ BuildRequires: qt5-qttools-linguist
 BuildRequires: python3-base
 
 %define permissions_dir %{_sysconfdir}/sailjail/permissions
+%define config_dir %{_sysconfdir}/sailjail/config
 
 %description
 %{summary}.
@@ -30,6 +31,8 @@ make %{?_smp_mflags}
 %license COPYING
 %dir %attr(755,root,root) %{permissions_dir}
 %{permissions_dir}/*
+%dir %attr(755,root,root) %{config_dir}
+%{config_dir}/*
 %{_datadir}/translations/*.qm
 
 %package ts-devel

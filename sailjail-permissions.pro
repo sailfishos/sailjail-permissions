@@ -3,6 +3,7 @@ TEMPLATE = subdirs
 SUBDIRS += translations
 
 DISTFILES = \
+    config/*.conf \
     permissions/*.permission \
     permissions/*.profile \
     rpm/sailjail-permissions.spec \
@@ -10,9 +11,13 @@ DISTFILES = \
     README.md \
     COPYING
 
+config.files = \
+    config/*.conf
+config.path = /etc/sailjail/config
+
 permissions.files = \
     permissions/*.permission \
     permissions/*.profile
 permissions.path = /etc/sailjail/permissions
 
-INSTALLS += permissions
+INSTALLS += config permissions
