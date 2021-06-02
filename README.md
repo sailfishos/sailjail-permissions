@@ -99,7 +99,7 @@ Permissions that applications may use (names are subject to change):
 | AppLaunch  | Launching and stopping systemd services. This is usually needed for background tasks. |
 | ApplicationInstallation | Installing and uninstalling applications. |
 | Audio | Playing and recording audio (since Pulseaudio streams cannot be separated both are enabled with this, but it is subject to change), changing audio configuration and showing audio controls on lockscreen. |
-| Bluetooth | Connecting to and using Bluetooth and NFC hardware. |
+| Bluetooth | Connecting to and using Bluetooth hardware. |
 | Calendar | Display and editing of calendar events. |
 | CallRecordings | Access recorded calls. |
 | Camera | Access to camera hardware to take photos or video. |
@@ -114,6 +114,7 @@ Permissions that applications may use (names are subject to change):
 | Messages | Access to message data and to send SMS messages. |
 | Microphone | Record audio with microphone. Use Audio permission for playback of the recorded audio (but since Pulseaudio streams cannot be separated this enables also audio playback, which is subject to change). |
 | Music | Access to Music directory, playlists and coverart cache. |
+| NFC | Connecting to and using NFC hardware. |
 | Phone | Make Phone calls, either directly or through system voice call UI. |
 | Pictures | Access to Pictures directory and thumbnails. |
 | PublicDir | Access to Public directory. |
