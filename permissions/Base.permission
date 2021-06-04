@@ -171,6 +171,8 @@ mkdir ${HOME}/.config/dconf
 mkdir ${HOME}/.cache/dconf
 whitelist ${HOME}/.config/dconf
 whitelist ${HOME}/.cache/dconf
+mkdir ${RUNUSER}/dconf
+whitelist ${RUNUSER}/dconf
 
 ### Qt's logging rules
 whitelist ${HOME}/.config/QtProject/qtlogging.ini
