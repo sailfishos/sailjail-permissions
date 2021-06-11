@@ -112,8 +112,8 @@ dbus-user.broadcast *=org.freedesktop.DBus.ObjectManager@/*
 # END sessionbus-filter.resource
 # BEG sessionbus-ca.desrt.dconf.Writer.resource
 dbus-user.talk ca.desrt.dconf
-dbus-user.call ca.desrt.dconf=ca.desrt.dconf.*@/*
-dbus-user.broadcast ca.desrt.dconf=ca.desrt.dconf.*@/*
+dbus-user.call ca.desrt.dconf=ca.desrt.dconf.Writer.*@/*
+dbus-user.broadcast ca.desrt.dconf=ca.desrt.dconf.Writer.*@/*
 # END sessionbus-ca.desrt.dconf.Writer.resource
 # BEG sessionbus-com.jolla.lipstick.resource
 dbus-user.broadcast com.jolla.lipstick=com.jolla.lipstick.*@/*
