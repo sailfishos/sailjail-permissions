@@ -136,6 +136,10 @@ whitelist ${RUNUSER}/maliit-server
 read-only ${RUNUSER}/maliit-server
 # END sessionbus-org.maliit.server.resource
 
+# Protect booster socket directory
+whitelist ${RUNUSER}/mapplauncherd
+read-only ${RUNUSER}/mapplauncherd
+
 ### network
 protocol unix
 net none
