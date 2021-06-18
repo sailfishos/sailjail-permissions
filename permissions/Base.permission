@@ -67,6 +67,7 @@ private-etc os-release
 private-etc localtime
 private-etc mtab
 private-etc mime.types
+private-etc kcapi
 
 ### D-Bus
 # BEG systembus-filter.resource
