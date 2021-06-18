@@ -38,7 +38,7 @@ For Exec line use **sailjail** to start the application, pass the file name of t
 and refer to the application binary with the full path.
 
 To declare permissions and data directories you need to add **X-Sailjail** section to the
-desktop file. Under the **X-Sailjail** section add
+desktop file. This is called _an application profile_. Under the **X-Sailjail** section add
 
 | Keyword | Description |
 | :---    | :---        |
@@ -87,6 +87,25 @@ data needs to be accessible by other applications.
 If application doesn't have a permission for a directory, all data in that directory will be hidden
 and the application sees only an empty read-only directory in that path. This allows to regular file
 access checks to function in expected way.
+
+## Sandboxing of applications without application profile
+
+If application does not define application profile, i.e. **X-Sailjail** section in its desktop file,
+a default profile may be applied. This is defined by configuration (see
+_config/50-default-profile.conf_) and applies a relaxed set of permissions which should be
+compatible with most existing and well-behaving applications. It specifically does not grant access
+to any sensitive data normally protected by _privileged_ group.
+
+Some assumptions about the application are made:
+- The application has only one binary as specified by _Exec_ key in desktop file
+- The application installs its own files in _/usr/share/<app binary name>_
+- The application stores its own private data in _~/.local/share/<app binary name>_
+- The application stores its config data in _~/.config/<app binary name>_
+- The application stores its cached data in _~/.cache/<app binary name>_
+- The application stores common data in user directories as specified by UserDirs or on memory card
+- The application doesn't need access to other application's data outside those common directories
+- The application doesn't need access to privileged data
+- The application doesn't need access to privileged or otherwise private D-Bus APIs
 
 ## Permissions
 
