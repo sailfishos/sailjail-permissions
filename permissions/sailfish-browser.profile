@@ -9,7 +9,6 @@
 # x-sailjail-long-description =
 
 ### APPLICATION
-dbus-user.own org.sailfishos.browser
 dbus-user.own org.sailfishos.browser.ui
 dbus-user.call com.jolla.settings=com.jolla.settings.ui.showTransfers@/com/jolla/settings/ui
 
