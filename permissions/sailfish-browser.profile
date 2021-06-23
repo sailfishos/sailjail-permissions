@@ -9,18 +9,8 @@
 # x-sailjail-long-description =
 
 ### APPLICATION
-dbus-user.own org.sailfishos.browser
 dbus-user.own org.sailfishos.browser.ui
 dbus-user.call com.jolla.settings=com.jolla.settings.ui.showTransfers@/com/jolla/settings/ui
-
-mkdir     ${HOME}/.cache/org.sailfishos/sailfish-browser
-whitelist ${HOME}/.cache/org.sailfishos/sailfish-browser
-
-mkdir     ${HOME}/.local/share/org.sailfishos/sailfish-browser
-whitelist ${HOME}/.local/share/org.sailfishos/sailfish-browser
-
-mkdir     ${HOME}/.mozilla/captiveportal
-whitelist ${HOME}/.mozilla/captiveportal
 
 # Saving bookmarks to launcher feature
 # Override read-only from whitelist-common.inc
