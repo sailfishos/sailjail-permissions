@@ -1,0 +1,12 @@
+# -*- mode: sh -*-
+
+# x-sailjail-translation-catalog = sailjail-permissions
+# x-sailjail-translation-key-description = permission-la-recentfiles
+# x-sailjail-description = Recent files
+# x-sailjail-translation-key-long-description = permission-la-recentfiles_description
+# x-sailjail-long-description = See what files were accessed recently
+
+mkdir     ${HOME}/.local/share/recentfiles/
+mkfile    ${HOME}/.local/share/recentfiles/recentfiles.db
+whitelist ${HOME}/.local/share/recentfiles/recentfiles.db
+
