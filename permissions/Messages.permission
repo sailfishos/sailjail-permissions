@@ -24,5 +24,10 @@ whitelist ${HOME}/.cache/commhistory-tmp
 # MMS
 dbus-system.talk org.ofono.SmartMessagingAgent
 
+# Roaming checking
+dbus-user.talk com.jolla.Connectiond
+dbus-user.broadcast com.jolla.Connectiond=com.jolla.Connectiond.*@/*
+
 # Allow requesting sim pin
 include /etc/sailjail/permissions/PinQuery.permission
+
