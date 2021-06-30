@@ -133,6 +133,7 @@ dbus-user.broadcast com.nokia.time=com.nokia.time.*@/*
 # BEG sessionbus-org.maliit.server.resource
 dbus-user.talk org.maliit.server
 dbus-user.broadcast org.maliit.server=org.maliit.server.*@/*
+mkdir ${RUNUSER}/maliit-server
 whitelist ${RUNUSER}/maliit-server
 read-only ${RUNUSER}/maliit-server
 # END sessionbus-org.maliit.server.resource
