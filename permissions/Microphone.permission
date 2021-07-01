@@ -1,6 +1,6 @@
 # -*- mode: sh -*-
 
-# x-sailjail-translation-catalog = sailjail-catalog
+# x-sailjail-translation-catalog = sailjail-permissions
 # x-sailjail-translation-key-description = permission-la-microphone
 # x-sailjail-description = Access microphone
 # x-sailjail-translation-key-long-description = permission-la-microphone_description
