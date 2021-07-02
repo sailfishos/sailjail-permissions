@@ -98,10 +98,10 @@ to any sensitive data normally protected by _privileged_ group.
 
 Some assumptions about the application are made:
 - The application has only one binary as specified by _Exec_ key in desktop file
-- The application installs its own files in _/usr/share/<app binary name>_
-- The application stores its own private data in _~/.local/share/<app binary name>_
-- The application stores its config data in _~/.config/<app binary name>_
-- The application stores its cached data in _~/.cache/<app binary name>_
+- The application installs its own files in _/usr/share/\<app binary name\>_
+- The application stores its own private data in _~/.local/share/\<app binary name\>_
+- The application stores its config data in _~/.config/\<app binary name\>_
+- The application stores its cached data in _~/.cache/\<app binary name\>_
 - The application stores common data in user directories as specified by UserDirs or on memory card
 - The application doesn't need access to other application's data outside those common directories
 - The application doesn't need access to privileged data
