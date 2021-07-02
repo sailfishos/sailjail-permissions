@@ -28,14 +28,17 @@ Let's go through needed changes via an example.
     Type=Application
     Name=MyApplication
     Icon=my-app-icon
-    Exec=/usr/bin/sailjail -p org.foobar.myapp.desktop /usr/bin/org.foobar.myapp
+    Exec=/usr/bin/org.foobar.MyApp
+
     [X-Sailjail]
     Permissions=Internet;Pictures
     OrganizationName=org.foobar
-    ApplicationName=myapp
+    ApplicationName=MyApp
 
-For Exec line use **sailjail** to start the application, pass the file name of the desktop file,
-and refer to the application binary with the full path.
+For Exec line use absolute path to the application binary when it matches the name of the desktop
+file in _/usr/share/applications_.
+If the name does not match, use **/usr/bin/sailjail** to start the application and pass the file
+name of the desktop file with **-p** option. Refer to the application binary with the full path.
 
 To declare permissions and data directories you need to add **X-Sailjail** section to the
 desktop file. This is called _an application profile_. Under the **X-Sailjail** section add
@@ -43,8 +46,8 @@ desktop file. This is called _an application profile_. Under the **X-Sailjail** 
 | Keyword | Description |
 | :---    | :---        |
 | Permissions | Semi-colon separated list of requested permissions |
-| OrganizationName | Application development organization |
-| ApplicationName | Application data folder |
+| OrganizationName | Application development organization as a reverse domain name |
+| ApplicationName | Application name |
 
 Permissions are listed [later in the document](#Permissions). They grant access to certain data
 paths, D-Bus interfaces, socket types and application binaries. Currently applications must define
@@ -72,7 +75,7 @@ to match the declaration added to the desktop file.
     QScopedPointer<QGuiApplication> app(Sailfish::createApplication(argc, argv));
     ...
     app->setOrganizationName(QStringLiteral("org.foobar"));
-    app->setApplicationName(QStringLiteral("myapp"));
+    app->setApplicationName(QStringLiteral("MyApp"));
     ...
 
 When Sailfish App library (libsailfishapp) is used these values are set automatically to the values
@@ -98,10 +101,10 @@ to any sensitive data normally protected by _privileged_ group.
 
 Some assumptions about the application are made:
 - The application has only one binary as specified by _Exec_ key in desktop file
-- The application installs its own files in _/usr/share/<app binary name>_
-- The application stores its own private data in _~/.local/share/<app binary name>_
-- The application stores its config data in _~/.config/<app binary name>_
-- The application stores its cached data in _~/.cache/<app binary name>_
+- The application installs its own files in _/usr/share/\<app binary name\>_
+- The application stores its own private data in _~/.local/share/\<app binary name\>_
+- The application stores its config data in _~/.config/\<app binary name\>_
+- The application stores its cached data in _~/.cache/\<app binary name\>_
 - The application stores common data in user directories as specified by UserDirs or on memory card
 - The application doesn't need access to other application's data outside those common directories
 - The application doesn't need access to privileged data
