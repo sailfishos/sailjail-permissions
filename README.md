@@ -28,14 +28,17 @@ Let's go through needed changes via an example.
     Type=Application
     Name=MyApplication
     Icon=my-app-icon
-    Exec=/usr/bin/sailjail -p org.foobar.myapp.desktop /usr/bin/org.foobar.myapp
+    Exec=/usr/bin/org.foobar.myapp
+
     [X-Sailjail]
     Permissions=Internet;Pictures
     OrganizationName=org.foobar
     ApplicationName=myapp
 
-For Exec line use **sailjail** to start the application, pass the file name of the desktop file,
-and refer to the application binary with the full path.
+For Exec line use absolute path to the application binary when it matches the name of the desktop
+file in _/usr/share/applications_.
+If the name does not match, use **/usr/bin/sailjail** to start the application and pass the file
+name of the desktop file with **-p** option. Refer to the application binary with the full path.
 
 To declare permissions and data directories you need to add **X-Sailjail** section to the
 desktop file. This is called _an application profile_. Under the **X-Sailjail** section add
