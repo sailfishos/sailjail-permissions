@@ -28,12 +28,12 @@ Let's go through needed changes via an example.
     Type=Application
     Name=MyApplication
     Icon=my-app-icon
-    Exec=/usr/bin/org.foobar.myapp
+    Exec=/usr/bin/org.foobar.MyApp
 
     [X-Sailjail]
     Permissions=Internet;Pictures
     OrganizationName=org.foobar
-    ApplicationName=myapp
+    ApplicationName=MyApp
 
 For Exec line use absolute path to the application binary when it matches the name of the desktop
 file in _/usr/share/applications_.
@@ -46,8 +46,8 @@ desktop file. This is called _an application profile_. Under the **X-Sailjail** 
 | Keyword | Description |
 | :---    | :---        |
 | Permissions | Semi-colon separated list of requested permissions |
-| OrganizationName | Application development organization |
-| ApplicationName | Application data folder |
+| OrganizationName | Application development organization as a reverse domain name |
+| ApplicationName | Application name |
 
 Permissions are listed [later in the document](#Permissions). They grant access to certain data
 paths, D-Bus interfaces, socket types and application binaries. Currently applications must define
@@ -75,7 +75,7 @@ to match the declaration added to the desktop file.
     QScopedPointer<QGuiApplication> app(Sailfish::createApplication(argc, argv));
     ...
     app->setOrganizationName(QStringLiteral("org.foobar"));
-    app->setApplicationName(QStringLiteral("myapp"));
+    app->setApplicationName(QStringLiteral("MyApp"));
     ...
 
 When Sailfish App library (libsailfishapp) is used these values are set automatically to the values
