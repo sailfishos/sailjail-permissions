@@ -1,0 +1,10 @@
+# -*- mode: sh -*-
+
+# x-sailjail-translation-catalog = sailjail-permissions
+# x-sailjail-translation-key-description = permission-la-sharedstorage
+# x-sailjail-description = Shared storage
+# x-sailjail-translation-key-long-description = permission-la-sharedstorage_description
+# x-sailjail-long-description = Access application's storage shared between users
+
+mkdir       /home/.shared/${OrganizationName}/${ApplicationName}
+whitelist   /home/.shared/${OrganizationName}/${ApplicationName}
