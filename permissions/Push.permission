@@ -1,0 +1,13 @@
+# -*- mode: sh -*-
+
+# x-sailjail-translation-catalog = sailjail-permissions
+# x-sailjail-translation-key-description = permission-la-push
+# x-sailjail-description = Push Notifications
+# x-sailjail-translation-key-long-description = permission-la-push_description
+# x-sailjail-long-description = Receive push notifications
+
+#BEG systembus-ru.omprussia.PushDaemon.resource
+dbus-system.talk ru.omprussia.PushDaemon
+dbus-system.broadcast ru.omprussia.PushDaemon=ru.omprussia.PushDaemon.*@/ru/omprussia/PushDaemon
+#END systembus-ru.omprussia.PushDaemon.resource
+
