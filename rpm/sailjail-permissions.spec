@@ -26,6 +26,8 @@ make %{?_smp_mflags}
 %install
 %qmake5_install
 
+ln -s voicecall-ui.profile %{buildroot}%{permissions_dir}/voicecall-ui-prestart.profile
+
 %files
 %defattr(-,root,root,-)
 %license COPYING
