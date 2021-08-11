@@ -64,6 +64,10 @@ private-etc fonts,xdg,system-fips,selinux
 private-etc dconf
 private-etc passwd,group
 private-etc os-release
+# private-etc content for symlinks is not copied, see
+# https://github.com/netblue30/firejail/issues/2966
+private-etc sailfish-release
+private-etc aurora-release
 private-etc localtime
 private-etc mtab
 private-etc mime.types
