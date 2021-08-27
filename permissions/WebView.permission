@@ -29,6 +29,9 @@ dbus-user.talk org.nemo.transferengine
 dbus-user.broadcast org.nemo.transferengine=org.nemo.transferengine.*@/*
 # END sessionbus-org.nemo.transferengine.resource
 
+# gecko-camera
+whitelist /usr/lib/gecko-camera/plugins
+
 ### INDIRECT/UNKNOWN
 
 # some side effect from some xdg action ?
