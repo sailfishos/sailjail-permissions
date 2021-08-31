@@ -17,6 +17,3 @@ dbus-user.call com.jolla.settings=com.jolla.settings.ui.showTransfers@/com/jolla
 read-write ${HOME}/.local/share/applications
 # Stop Base.permission from making the dir read-only
 ignore read-only ${HOME}/.local/share/applications
-
-# gecko-camera
-whitelist /usr/lib/gecko-camera/plugins
