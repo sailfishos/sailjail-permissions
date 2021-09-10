@@ -168,6 +168,9 @@ seccomp
 ### notifications
 include /etc/sailjail/permissions/Notifications.permission
 
+### sharing
+include /etc/sailjail/permissions/Sharing.permission
+
 ### Disable access to media by default
 disable-mnt
 

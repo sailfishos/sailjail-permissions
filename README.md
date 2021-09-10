@@ -141,7 +141,6 @@ Permissions that applications may use (names are subject to change):
 | Pictures | Access to Pictures directory and thumbnails. |
 | PublicDir | Access to Public directory. |
 | RemovableMedia | Use memory cards and USB sticks. |
-| Sharing | Use of sharing pages in the application to share data via Bluetooth, email or other accounts. |
 | Synchronization | Access to synchronization framework. |
 | UserDirs | Access to Documents, Downloads, Music, Pictures, Public and Video directories. |
 | Videos | Access to Videos directory and thumbnails. |
@@ -158,6 +157,7 @@ Internal permissions that applications generally should not use directly:
 | Notifications |
 | PinQuery |
 | Sensors |
+| Sharing |
 | Thumbnails |
 | UDisks | Permissions to call UDisks functions, includes UDisksListen. |
 | UDisksListen | Permissions to listen signals and property changes on UDisks2 interfaces. |
