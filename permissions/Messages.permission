@@ -23,6 +23,8 @@ whitelist ${HOME}/.cache/commhistory-tmp
 
 # MMS
 dbus-system.talk org.ofono.SmartMessagingAgent
+dbus-system.talk org.nemomobile.MmsHandler
+dbus-system.broadcast org.nemomobile.MmsHandler=org.nemomobile.MmsHandler.*@/*
 
 # Roaming checking
 dbus-user.talk com.jolla.Connectiond
