@@ -156,6 +156,7 @@ Internal permissions that applications generally should not use directly:
 | FingerprintSensor |
 | Notifications |
 | PinQuery |
+| Secrets |
 | Sensors |
 | Sharing |
 | Thumbnails |
