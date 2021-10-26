@@ -4,8 +4,7 @@ Sailfish OS application sandboxing and permissions system is build on top of
 Firejail. The Firejail documentation can be found from [here](https://firejail.wordpress.com/).
 
 The Sailfish OS application permissions are applicable only to sandboxed applications. Target is to
-have application sandboxing enforced to all applications but currently we are not there yet. Note
-that permission system is only available for 1st and 2nd party application developers.
+have application sandboxing enforced to all applications, starting from Sailfish OS 4.4.0.
 
 Application launch happens via standard desktop file that has been augmented
 so that it contains necessary metadata (such as a list of requested permissions)
@@ -28,17 +27,18 @@ Let's go through needed changes via an example.
     Type=Application
     Name=MyApplication
     Icon=my-app-icon
-    Exec=/usr/bin/org.foobar.MyApp
+    Exec=harbour-myapp
 
     [X-Sailjail]
     Permissions=Internet;Pictures
     OrganizationName=org.foobar
     ApplicationName=MyApp
 
-For Exec line use absolute path to the application binary when it matches the name of the desktop
-file in _/usr/share/applications_.
+The Exec line should match the name of the desktop file in _/usr/share/applications_.
 If the name does not match, use **/usr/bin/sailjail** to start the application and pass the file
-name of the desktop file with **-p** option. Refer to the application binary with the full path.
+name of the desktop file with **-p** option. If you are developing an app which is intended
+for Harbour, you should not use path on the Exec line. In other cases, refer to the application 
+binary with the full path.
 
 To declare permissions and data directories you need to add **X-Sailjail** section to the
 desktop file. This is called _an application profile_. Under the **X-Sailjail** section add
