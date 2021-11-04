@@ -10,3 +10,5 @@ dbus-system.call org.nemomobile.devicelock=org.nemomobile.devicelock.Authenticat
 read-write ${HOME}/.local/share/applications
 # Stop Base.permission from making the dir read-only
 ignore read-only ${HOME}/.local/share/applications
+
+include /etc/sailjail/permissions/sailfish-policy.inc

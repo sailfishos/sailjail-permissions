@@ -27,6 +27,7 @@ make %{?_smp_mflags}
 %qmake5_install
 
 ln -s voicecall-ui.profile %{buildroot}%{permissions_dir}/voicecall-ui-prestart.profile
+ln -s jolla-camera.profile %{buildroot}%{permissions_dir}/jolla-camera-lockscreen.profile
 
 %files
 %defattr(-,root,root,-)

@@ -8,3 +8,5 @@ dbus-system.broadcast org.nemomobile.provisioning=org.nemomobile.provisioning.in
 dbus-system.call com.nokia.dsme=com.nokia.dsme.request.*@/com/nokia/dsme/request
 
 dbus-user.call com.jolla.settings=com.jolla.settings.ui.showPage@/com/jolla/settings/ui
+
+include /etc/sailjail/permissions/sailfish-policy.inc
