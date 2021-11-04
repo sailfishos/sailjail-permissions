@@ -1,14 +1,4 @@
 # -*- mode: sh -*-
-
-# Firejail profile for /usr/bin/sailfish-browser
-
-# x-sailjail-translation-catalog =
-# x-sailjail-translation-key-description =
-# x-sailjail-description = Execute sailfish-browser application
-# x-sailjail-translation-key-long-description =
-# x-sailjail-long-description =
-
-### APPLICATION
 dbus-user.own org.sailfishos.browser.ui
 dbus-user.call com.jolla.settings=com.jolla.settings.ui.showTransfers@/com/jolla/settings/ui
 
