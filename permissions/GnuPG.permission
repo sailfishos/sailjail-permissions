@@ -13,3 +13,8 @@ noblacklist ${HOME}/.gnupg
 private-bin gpg2
 private-bin gpg-agent
 private-bin pinentry
+
+# pinentry is talking to the Secrets daemon in pipe mode
+# this include can be safely removed when the gpg-agent will
+# run in daemon mode.
+include /etc/sailjail/permissions/Secrets.permission
