@@ -50,6 +50,7 @@ whitelist /usr/share/translations
 whitelist /usr/share/zoneinfo
 whitelist /usr/share/glib-2.0
 whitelist /usr/share/mime
+whitelist /usr/share/contextkit
 
 include whitelist-usr-share-common.inc
 
