@@ -1,0 +1,32 @@
+# -*- mode: sh -*-
+# This provides compatibility for older apps
+# The permission is not shown to user,
+# thus it ***must not*** give access to additional data or hardware resources
+
+# x-sailjail-translation-catalog =
+# x-sailjail-translation-key-description = permission-la-compatibility
+# x-sailjail-description = Compatibility
+# x-sailjail-translation-key-long-description = permission-la-compatibility_description
+# x-sailjail-long-description =
+
+# PDF tools
+private-bin pdfinfo
+private-bin pdftocairo
+private-bin pdftoppm
+private-bin pdftops
+
+# Calligra for office file conversion
+private-bin calligraconverter
+
+# ffmpeg
+private-bin ffmpeg
+private-bin ffprobe
+
+# Package manager
+# Note that this does not allow install or removal
+private-bin rpm
+
+# Basic tools
+private-bin busybox
+private-bin tar
+private-bin which
