@@ -75,7 +75,8 @@ private-etc mime.types
 private-etc kcapi
 # Codec config
 private-etc gst-droid
-
+# Some devices load codec configuration from /etc
+private-etc media_codecs.xml
 
 ### D-Bus
 # BEG systembus-filter.resource
