@@ -151,7 +151,7 @@ Internal permissions that applications generally should not use directly:
 | :---       | :---        |
 | Base       | Base set of permissions that every application is granted implicitly. |
 | CaptivePortal |
-| Compatibility | Access to binaries for compatibility. Direct use of binaries should be avoided. |
+| Compatibility | Access to binaries for compatibility. Direct use of binaries should be avoided. Please note that this permission is provided in order to support old applications, new applications should try to use other means. The binaries may disappear in any release, for any reason, but especially if we provide APIs with similar functionality. |
 | Connman |
 | GnuPG |
 | FingerprintSensor |
