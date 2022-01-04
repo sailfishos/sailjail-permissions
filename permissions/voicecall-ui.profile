@@ -9,4 +9,10 @@ dbus-system.call com.nokia.dsme=com.nokia.dsme.request.*@/com/nokia/dsme/request
 
 dbus-user.call com.jolla.settings=com.jolla.settings.ui.showPage@/com/jolla/settings/ui
 
+# Specials
+dbus-system.talk org.nemomobile.devicelock
+dbus-system.call org.nemomobile.devicelock=org.nemomobile.lipstick.devicelock.state@/org/nemomobile/devicelock
+dbus-user.talk com.jolla.csd
+dbus-user.call com.jolla.csd=com.jolla.csd@/
+
 include /etc/sailjail/permissions/sailfish-policy.inc
