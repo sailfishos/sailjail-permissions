@@ -7,6 +7,8 @@
 # x-sailjail-long-description = Permissions to access properties and to listen to property changes on storage devices
 
 # BEG systembus-org.freedesktop.UDisks2.resource
+dbus-system.broadcast org.freedesktop.UDisks2=org.freedesktop.DBus.ObjectManager.*@/*
+dbus-system.broadcast org.freedesktop.UDisks2=org.freedesktop.DBus.Properties.*@/*
 dbus-system.broadcast org.freedesktop.UDisks2=org.freedesktop.UDisks2.*@/*
 dbus-system.broadcast org.freedesktop.UDisks2.*=org.freedesktop.UDisks2.*@/*
 
