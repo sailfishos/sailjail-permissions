@@ -31,5 +31,5 @@ dbus-user.broadcast org.nemo.transferengine=org.nemo.transferengine.*@/*
 
 ### INDIRECT/UNKNOWN
 
-# some side effect from some xdg action ?
-whitelist ${HOME}/Desktop
+noblacklist ${HOME}/Desktop
+whitelist   ${HOME}/Desktop
