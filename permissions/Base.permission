@@ -106,6 +106,10 @@ dbus-system.talk com.nokia.NonGraphicFeedback1.Backend
 dbus-system.broadcast com.nokia.NonGraphicFeedback1.Backend=com.nokia.NonGraphicFeedback1.Backend.*@/*
 # END systembus-com.nokia.NonGraphicFeedback1.Backend.resource
 
+# Signals from dsme
+dbus-system.talk com.nokia.dsme
+dbus-system.broadcast com.nokia.dsme=com.nokia.dsme.signal.*@/*
+
 # BEG sessionbus-filter.resource
 dbus-user filter
 dbus-user.talk org.freedesktop.DBus
