@@ -58,6 +58,7 @@ include whitelist-usr-share-common.inc
 whitelist /var/lib/timed
 blacklist /var/lib/timed/shared_events
 blacklist /var/lib/timed/shared_settings
+whitelist /var/run
 # FIXME: /var handling needs more thought
 
 # /etc:
