@@ -11,6 +11,8 @@ whitelist /var/lib/location
 
 private-etc location
 
+include /etc/sailjail/permissions/Sensors.permission
+
 # BEG sessionbus-org.freedesktop.GeoClue.resource
 dbus-user.talk org.freedesktop.Geoclue.*
 dbus-user.broadcast org.freedesktop.Geoclue.*=org.freedesktop.Geoclue.*@/*
