@@ -82,6 +82,52 @@ ensure that correct organization and application name is set.
 When Sailfish App library is used, these values are set automatically to the values
 set in application's Desktop Entry file.
 
+Sandboxed applications cannot use `QSettings` constructed with the default arguments - it would use
+an inaccessible path outside `QStandardPaths::AppDataLocation`. A suitable settings file path needs
+to be determined explicitly.
+
+    const QString settingsPath =
+        QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation)
+        + "/" + QCoreApplication::applicationName() + ".conf";
+    QSettings settings(settingsPath, QSettings::NativeFormat);
+
+Unless you are creating a new application, it is also necessary to take care about migrating
+application data and configuration from the old location outside the sandbox.
+
+An example of how `QSettings`-based configuration may be migrated:
+
+    if (!settings.contains("migrated")) {
+        const QString oldSettingsPath =
+            QStandardPaths::writableLocation(QStandardPaths::ConfigLocation)
+            + "/" + QCoreApplication::applicationName()
+            + "/" + QCoreApplication::applicationName() + ".conf";
+        QSettings oldSettings(oldSettingsPath, QSettings::NativeFormat);
+
+        for (const QString &key : oldSettings.childKeys())
+            settings.setValue(key, oldSettings.value(key));
+
+        settings.setValue("migrated", "true");
+    }
+
+Similarly with QML `LocalStorage`:
+
+    QDir dbDir(QStandardPaths::writableLocation(QStandardPaths::AppLocalDataLocation)
+            + "/QML/OfflineStorage/Databases/");
+    if (!dbDir.exists()) {
+        QDir oldDbDir(QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)
+                + "/" + QCoreApplication::applicationName()
+                + "/" + QCoreApplication::applicationName()
+                + "/QML/OfflineStorage/Databases/");
+
+        dbDir.mkpath(".");
+
+        const QStringList dbFiles = oldDbDir.entryList({"*.sqlite", "*.ini"}, QDir::Files);
+        for (const QString &dbFile : dbFiles) {
+            if (!QFile::copy(oldDbDir.filePath(dbFile), dbDir.filePath(dbFile)))
+                ...
+        }
+    }
+
 ### Files shared with other applications
 
 Directories under user home such as Documents, Downloads, Music, Pictures and Videos contain files that
