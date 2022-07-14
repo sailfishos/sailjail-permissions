@@ -69,17 +69,18 @@ application restarts.
 
 ### Use correct application data directories
 
-Modify Qt application main function by setting the organization and application name
-to match the declaration added to the desktop file.
+Applications that are not using the Sailfish App library
+([libsailfishapp](https://github.com/sailfishos/libsailfishapp)) for their initialization must
+ensure that correct organization and application name is set.
 
-    QScopedPointer<QGuiApplication> app(Sailfish::createApplication(argc, argv));
     ...
+    QGuiApplication *app = ...;
     app->setOrganizationName(QStringLiteral("org.foobar"));
     app->setApplicationName(QStringLiteral("MyApp"));
     ...
 
-When Sailfish App library (libsailfishapp) is used these values are set automatically to the values
-set in desktop file.
+When Sailfish App library is used, these values are set automatically to the values
+set in application's Desktop Entry file.
 
 ### Files shared with other applications
 
