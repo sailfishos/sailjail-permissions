@@ -3,8 +3,9 @@
 Sailfish OS application sandboxing and permissions system is build on top of
 Firejail. The Firejail documentation can be found from [here](https://firejail.wordpress.com/).
 
-The Sailfish OS application permissions are applicable only to sandboxed applications. Target is to
-have application sandboxing enforced to all applications, starting from Sailfish OS 4.4.0.
+The Sailfish OS application permissions are applicable only to sandboxed applications. Since
+Sailfish OS 4.4.0 all applications that do not specifically opt-out or define permissions are
+sandboxed automatically using a default profile.
 
 Application launch happens via standard desktop file that has been augmented
 so that it contains necessary metadata (such as a list of requested permissions)
