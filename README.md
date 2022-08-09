@@ -162,55 +162,55 @@ Some assumptions about the application are made:
 
 Permissions that applications may use (names are subject to change):
 
-| Permission | Description |
-| :---       | :---        |
-| Accounts   | Using accounts, including editing them. Syncing accounts. |
-| Ambience   | Set and edit ambiences. |
-| AppLaunch  | Launching and stopping systemd services. This is usually needed for background tasks. |
-| ApplicationInstallation | Installing and uninstalling applications. |
-| Audio | Playing and recording audio (since Pulseaudio streams cannot be separated both are enabled with this, but it is subject to change), changing audio configuration and showing audio controls on lockscreen. |
-| Bluetooth | Connecting to and using Bluetooth hardware. |
-| Calendar | Display and editing of calendar events. |
-| CallRecordings | Access recorded calls. |
-| Camera | Access to camera hardware to take photos or video. |
-| CommunicationHistory | Access call and message history. |
-| Contacts | Display and editing of contacts data. Access to contact cards. |
-| Documents | Access to Documents directory. |
-| Downloads | Access to Downloads directory. |
-| Email | Reading and sending emails. Access to email attachments. |
-| Internet | Using data connection and connecting to internet. |
-| Location | Use GPS and positioning. |
-| MediaIndexing | Access to Tracker to list files on device. If you have access to a data directory, you may want to use also this. |
-| Messages | Access to message data and to send SMS messages. |
-| Microphone | Record audio with microphone. Use Audio permission for playback of the recorded audio (but since Pulseaudio streams cannot be separated this enables also audio playback, which is subject to change). |
-| Music | Access to Music directory, playlists and coverart cache. |
-| NFC | Connecting to and using NFC hardware. |
-| Phone | Make Phone calls, either directly or through system voice call UI. |
-| Pictures | Access to Pictures directory and thumbnails. |
-| PublicDir | Access to Public directory. |
-| RemovableMedia | Use memory cards and USB sticks. |
-| Synchronization | Access to synchronization framework. |
-| UserDirs | Access to Documents, Downloads, Music, Pictures, Public and Video directories. |
-| Videos | Access to Videos directory and thumbnails. |
-| WebView | If you use Gecko based WebView you need this. |
+|  Permission  | Description |
+|  :---        | :---        |
+| [Accounts](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Accounts.permission) | Using accounts, including editing them. Syncing accounts. |
+| [Ambience](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Ambience.permission) | Set and edit ambiences. |
+| [AppLaunch](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/AppLaunch.permission) | Launching and stopping systemd services. This is usually needed for background tasks. |
+| [ApplicationInstallation](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/ApplicationInstallation.permission) | Installing and uninstalling applications. |
+| [Audio](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Audio.permission) | Playing and recording audio (since Pulseaudio streams cannot be separated both are enabled with this, but it is subject to change), changing audio configuration and showing audio controls on lockscreen. |
+| [Bluetooth](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Bluetooth.permission) | Connecting to and using Bluetooth hardware. |
+| [Calendar](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Calendar.permission) | Display and editing of calendar events. |
+| [CallRecordings](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/CallRecordings.permission) | Access recorded calls. |
+| [Camera](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Camera.permission) | Access to camera hardware to take photos or video. |
+| [CommunicationHistory](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/CommunicationHistory.permission) | Access call and message history. |
+| [Contacts](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Contacts.permission) | Display and editing of contacts data. Access to contact cards. |
+| [Documents](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Documents.permission) | Access to Documents directory. |
+| [Downloads](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Downloads.permission) | Access to Downloads directory. |
+| [Email](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Email.permission) | Reading and sending emails. Access to email attachments. |
+| [Internet](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Internet.permission) | Using data connection and connecting to internet. |
+| [Location](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Location.permission) | Use GPS and positioning. |
+| [MediaIndexing](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/MediaIndexing.permission) | Access to Tracker to list files on device. If you have access to a data directory, you may want to use also this. |
+| [Messages](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Messages.permission) | Access to message data and to send SMS messages. |
+| [Microphone](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Microphone.permission) | Record audio with microphone. Use Audio permission for playback of the recorded audio (but since Pulseaudio streams cannot be separated this enables also audio playback, which is subject to change). |
+| [Music](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Music.permission) | Access to Music directory, playlists and coverart cache. |
+| [NFC](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/NFC.permission) | Connecting to and using NFC hardware. |
+| [Phone](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Phone.permission) | Make Phone calls, either directly or through system voice call UI. |
+| [Pictures](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Pictures.permission) | Access to Pictures directory and thumbnails. |
+| [PublicDir](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/PublicDir.permission) | Access to Public directory. |
+| [RemovableMedia](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/RemovableMedia.permission) | Use memory cards and USB sticks. |
+| [Synchronization](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Synchronization.permission) | Access to synchronization framework. |
+| [UserDirs](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/UserDirs.permission) | Access to Documents, Downloads, Music, Pictures, Public and Video directories. |
+| [Videos](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Videos.permission) | Access to Videos directory and thumbnails. |
+| [WebView](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/WebView.permission) | If you use Gecko based WebView you need this. |
 
 Internal permissions that applications generally should not use directly:
 | Permission | Description |
 | :---       | :---        |
-| Base       | Base set of permissions that every application is granted implicitly. |
-| CaptivePortal |
-| Compatibility | Access to binaries for compatibility. Direct use of binaries should be avoided. Please note that this permission is provided in order to support old applications, new applications should try to use other means. The binaries may disappear in any release, for any reason, but especially if we provide APIs with similar functionality. |
-| Connman |
-| GnuPG |
-| FingerprintSensor |
-| Notifications |
-| PinQuery |
-| Secrets |
-| Sensors |
-| Sharing |
-| Thumbnails |
-| UDisks | Permissions to call UDisks functions, includes UDisksListen. |
-| UDisksListen | Permissions to listen signals and property changes on UDisks2 interfaces. |
+| [Base](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Base.permission)   | Base set of permissions that every application is granted implicitly. |
+| [CaptivePortal](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/CaptivePortal.permission) |
+| [Compatibility](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Compatibility.permission) | Access to binaries for compatibility. Direct use of binaries should be avoided. Please note that this permission is provided in order to support old applications, new applications should try to use other means. The binaries may disappear in any release, for any reason, but especially if we provide APIs with similar functionality. |
+| [Connman](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Connman.permission) |
+| [FingerprintSensor](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/FingerprintSensor.permission) |
+| [GnuPG](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/GnuPG.permission) |
+| [Notifications](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Notifications.permission) |
+| [PinQuery](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/PinQuery.permission) |
+| [Secrets](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Secrets.permission) |
+| [Sensors](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Sensors.permission) |
+| [Sharing](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Sharing.permission) |
+| [Thumbnails](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/Thumbnails.permission) |
+| [UDisks](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/UDisks.permission) | Permissions to call UDisks functions, includes UDisksListen. |
+| [UDisksListen](https://github.com/sailfishos/sailjail-permissions/blob/master/permissions/UDisksListen.permission) | Permissions to listen signals and property changes on UDisks2 interfaces. |
 
 ### Permission metadata format
 
