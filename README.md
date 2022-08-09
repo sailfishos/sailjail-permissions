@@ -199,7 +199,7 @@ Internal permissions that applications generally should not use directly:
 | :---       | :---        |
 | Base       | Base set of permissions that every application is granted implicitly. |
 | CaptivePortal |
-| Compatibility | Access to binaries for compatibility. Direct use of binaries should be avoided. Please note that this permission is provided in order to support old applications, new applications should try to use other means. The binaries may disappear in any release, for any reason, but especially if we provide APIs with similar functionality. |
+| Compatibility | Allows for accessing certain binaries to provide some degree of compatibility for extant apps. In general, only library classes and functions are allowed to be used by new applications. The access to these binaries may disappear in any Sailfish&nbsp;OS release, especially if official APIs with similar functionality are provided. |
 | Connman |
 | GnuPG |
 | FingerprintSensor |
