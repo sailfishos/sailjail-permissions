@@ -207,7 +207,7 @@ Internal permissions that applications generally should not use directly:
 | Notifications |
 | PinQuery |
 | Sensors |
-| Sharing |
+| Sharing | Allows an application to access the [Share API](https://sailfishos.org/develop/docs/declarative-transferengine/), for sending data to other applications. The Share API is fully mediated and under the user's explicit control, and is therefore considered low risk. Consequently this permission is contained as part of the Base permission and hence implicitly granted to all applications.
 | Thumbnails |
 | UDisks | Permissions to call UDisks functions, includes UDisksListen. |
 | UDisksListen | Permissions to listen signals and property changes on UDisks2 interfaces. |
