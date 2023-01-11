@@ -9,12 +9,6 @@
 # x-sailjail-translation-key-long-description = permission-la-compatibility_description
 # x-sailjail-long-description =
 
-# PDF tools
-private-bin pdfinfo
-private-bin pdftocairo
-private-bin pdftoppm
-private-bin pdftops
-
 # Calligra for office file conversion
 private-bin calligraconverter
 
