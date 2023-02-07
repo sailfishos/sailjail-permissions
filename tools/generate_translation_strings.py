@@ -65,8 +65,8 @@ const auto {self.key.replace("-", "_")}_{self.name.replace("-", "_")} = qtTrId("
 
 def generate(translations):
     print("/* Generated dummy file, do not edit */")
-    for file in filter(lambda name: name.endswith(".permission") or name.endswith(".profile"),
-                       os.listdir(translations)):
+    for file in sorted(filter(lambda name: name.endswith(".permission") or name.endswith(".profile"),
+                              os.listdir(translations))):
         for translation in Generator(os.path.join(translations, file)):
             print(translation)
     print("/* End of translations */")
