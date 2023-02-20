@@ -1,6 +1,6 @@
 Name:     sailjail-permissions
 Summary:  Permissions definitions for Sailjail
-Version:  1.0.0
+Version:  1.1.10
 Release:  1
 License:  BSD
 URL:      https://github.com/sailfishos/sailjail-permissions
