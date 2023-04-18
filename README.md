@@ -187,6 +187,7 @@ Permissions that applications may use (names are subject to change):
 | NFC | Connecting to and using NFC hardware. |
 | Phone | Make Phone calls, either directly or through system voice call UI. |
 | Pictures | Access to Pictures directory and thumbnails. |
+| Privileged | Access to privileged data. |
 | PublicDir | Access to Public directory. |
 | RemovableMedia | Use memory cards and USB sticks. |
 | Secrets | Access to Sailfish Secrets. Since 4.5.0 |
