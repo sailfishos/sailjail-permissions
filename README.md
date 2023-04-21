@@ -187,7 +187,6 @@ Permissions that applications may use (names are subject to change):
 | NFC | Connecting to and using NFC hardware. |
 | Phone | Make Phone calls, either directly or through system voice call UI. |
 | Pictures | Access to Pictures directory and thumbnails. |
-| Privileged | Access to privileged data. |
 | PublicDir | Access to Public directory. |
 | RemovableMedia | Use memory cards and USB sticks. |
 | Secrets | Access to Sailfish Secrets. Since 4.5.0 |
@@ -207,6 +206,7 @@ Internal permissions that applications generally should not use directly:
 | FingerprintSensor |
 | Notifications |
 | PinQuery |
+| Privileged | Access to privileged data. |
 | Sensors |
 | Sharing | Allows an application to access the [Share API](https://sailfishos.org/develop/docs/declarative-transferengine/), for sending data to other applications. The Share API is fully mediated and under the user's explicit control, and is therefore considered low risk. Consequently this permission is contained as part of the Base permission and hence implicitly granted to all applications.
 | Thumbnails |
