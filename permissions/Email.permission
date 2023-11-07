@@ -6,10 +6,11 @@
 # x-sailjail-translation-key-long-description = permission-la-email_description
 # x-sailjail-long-description = Read and send email
 
-# MessageServer socket
-mkdir     ${RUNUSER}/messageserver
-whitelist ${RUNUSER}/messageserver
-read-only ${RUNUSER}/messageserver
+# MessageServer DBus interfaces
+dbus-user.talk org.qt.messageserver
+dbus-user.talk org.qt.mailstore
+dbus-user.broadcast org.qt.messageserver=org.qt.messageserver.*@/*
+dbus-user.broadcast org.qt.mailstore=org.qt.mailstore.*@/*
 
 # Messaging framework
 mkdir     ${HOME}/.qmf
