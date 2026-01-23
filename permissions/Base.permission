@@ -77,6 +77,13 @@ private-etc gst-droid
 # Some devices load codec configuration from /etc
 private-etc media_codecs.xml
 
+# /dev:
+whitelist /dev/null
+whitelist /dev/full
+whitelist /dev/zero
+whitelist /dev/random
+whitelist /dev/urandom
+
 ### D-Bus
 # BEG systembus-filter.resource
 dbus-system filter
