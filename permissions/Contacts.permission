@@ -22,7 +22,8 @@ dbus-user.talk org.sailfishos.maps
 dbus-user.talk com.jolla.contacts.ui
 
 dbus-user.own org.nemomobile.contacts.sqlite.*
-dbus-user.broadcast *=org.nemomobile.contacts.sqlite.*@/org/nemomobile/contacts/sqlite
+# TODO: support * as source once that's support
+dbus-user.broadcast org.nemomobile.contacts.sqlite.*=org.nemomobile.contacts.sqlite.*@/org/nemomobile/contacts/sqlite
 
 mkdir     ${HOME}/.local/share/system/Contacts
 whitelist ${HOME}/.local/share/system/Contacts

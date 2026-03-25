@@ -10,7 +10,9 @@
 dbus-user.talk org.qt.messageserver
 dbus-user.talk org.qt.mailstore
 dbus-user.broadcast org.qt.messageserver=org.qt.messageserver.*@/*
-dbus-user.broadcast org.qt.mailstore=org.qt.mailstore.*@/*
+dbus-user.own org.qt.mailstore.*
+# TODO: support * as source once that's support
+dbus-user.broadcast org.qt.mailstore.*=org.qt.mailstore.*@/*
 
 # Messaging framework
 mkdir     ${HOME}/.qmf
