@@ -14,4 +14,5 @@ dbus-user.broadcast org.nemomobile.CommHistory=org.nemomobile.CommHistory.*@/org
 dbus-user.call org.nemomobile.CommHistory=org.nemomobile.CommHistory.*@/org/nemomobile/CommHistory
 
 dbus-user.own com.nokia.commhistory.*
-dbus-user.broadcast *=com.nokia.commhistory.*@/CommHistoryModel
+# TODO: support * as source once that's supported
+dbus-user.broadcast com.nokia.commhistory.*=com.nokia.commhistory.*@/CommHistoryModel
