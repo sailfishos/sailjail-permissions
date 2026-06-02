@@ -1,5 +1,7 @@
 # -*- mode: sh -*-
 dbus-user.own org.sailfishos.browser.ui
+dbus-user.talk org.sailfishos.fileservice
+dbus-user.call com.jolla.settings=com.jolla.settings.ui.importRss@/com/jolla/settings/ui
 dbus-user.call com.jolla.settings=com.jolla.settings.ui.showTransfers@/com/jolla/settings/ui
 
 dbus-system.talk org.nemomobile.devicelock
