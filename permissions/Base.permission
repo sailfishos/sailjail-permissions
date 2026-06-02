@@ -134,10 +134,6 @@ dbus-user.own       org.sailfishos.coveraction.*
 dbus-user.talk      org.sailfishos.coveraction
 dbus-user.broadcast org.sailfishos.coveraction.*=org.sailfishos.coveraction.*@/*
 # END sessionbus-com.jolla.lipstick.resource
-# BEG sessionbus-com.nokia.profiled.resource
-dbus-user.talk com.nokia.profiled
-dbus-user.broadcast com.nokia.profiled=com.nokia.profiled.*@/*
-# END sessionbus-com.nokia.profiled.resource
 # BEG sessionbus-com.nokia.time.resource
 dbus-user.talk com.nokia.time
 dbus-user.broadcast com.nokia.time=com.nokia.time.*@/*

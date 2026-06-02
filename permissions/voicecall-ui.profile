@@ -15,4 +15,9 @@ dbus-system.call org.nemomobile.devicelock=org.nemomobile.lipstick.devicelock.st
 dbus-user.talk com.jolla.csd
 dbus-user.call com.jolla.csd=com.jolla.csd@/
 
+# BEG sessionbus-com.nokia.profiled.resource
+dbus-user.talk com.nokia.profiled
+dbus-user.broadcast com.nokia.profiled=com.nokia.profiled.*@/*
+# END sessionbus-com.nokia.profiled.resource
+
 include /etc/sailjail/permissions/sailfish-policy.inc
