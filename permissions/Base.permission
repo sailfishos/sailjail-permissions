@@ -123,6 +123,10 @@ dbus-user.broadcast *=org.freedesktop.DBus.Peer@/*
 dbus-user.broadcast *=org.freedesktop.DBus.Properties@/*
 dbus-user.broadcast *=org.freedesktop.DBus.ObjectManager@/*
 # END sessionbus-filter.resource
+
+# Resolve and open URLs through the file service
+dbus-user.call org.sailfishos.fileservice=org.sailfishos.fileservice.*@/
+
 # BEG sessionbus-ca.desrt.dconf.Writer.resource
 dbus-user.talk ca.desrt.dconf
 dbus-user.call ca.desrt.dconf=ca.desrt.dconf.Writer.*@/*
