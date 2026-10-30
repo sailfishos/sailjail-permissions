@@ -11,6 +11,9 @@ whitelist /var/lib/location
 
 private-etc location
 
+# allow retrieving and storing last known position
+read-write ${HOME}/.local/share/qtposition-geoclue
+
 include /etc/sailjail/permissions/Sensors.permission
 
 # BEG sessionbus-org.freedesktop.GeoClue.resource
